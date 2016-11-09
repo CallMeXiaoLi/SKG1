@@ -1,0 +1,82 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, table, th, td { margin: 0px; padding: 0px; }
+h1,h2,h3, h4, h5, h6 { font-weight: normal; }
+cite, em, var { font-style: normal; }
+ul,ol,li { list-style:none; }
+body, input, textarea, select, button { font-family: "微软雅黑"; color: rgb(51, 51, 51); font-size: 12px; text-rendering: optimizelegibility; font-feature-settings: "liga", "kern"; }
+img { border: 0px none; display: block;}
+button, input, select, textarea { font-size: 100%; }
+body { background-image: url('undefined'); background-attachment: fixed; }
+.site{width: 100%; margin: 0 auto;}
+
+
+/*banner图轮播*/
+#banner{ height: 717px; overflow: hidden; position: relative;}
+#banner .hd{bottom: 45px; left: 0; overflow: hidden; position: absolute; width: 100%; z-index: 1;}
+#banner ol{ margin: auto; overflow: hidden; text-align: center; }
+#banner ol li{border: 2px solid #e18484; border-radius: 100%; cursor: pointer; display: inline-block; height: 15px; line-height: 14px; margin-right: 2px; text-align: center; width: 15px;}
+.active{background: #e18484;}
+#banner .bd{ position: absolute; width: 300%; height: 100%; z-index: 0; overflow: hidden;} 
+.bd  li{float: left; height: 100%;width: 33.333%;}
+/*.bd img{width: 1263px; height:100%; float: left;}*/
+
+/*中间部分*/
+.custom{padding: 15px 18px;}
+.custom p{line-height: 34px; background:#BFBFBF; text-align: center;}
+.custom p a{text-decoration: none;color: #d21111;}
+.wrap{padding: 15px 0; overflow: hidden; width: 1263px; margin: 0 auto;}
+.wrap li{float:left; margin-left: 14px; height: 170px;}
+/*.wrap li a{overflow: hidden;}*/
+.gunwrap{padding:23px 0 0 4px; position: relative; width: 1263px; margin: 0 auto;}
+.onScroll{color: #999;}
+.gunwrap .title{margin-left: 14px;}
+.gunwrap .title h3{line-height: 57px; font-weight: 900; font-size: 22px; color: #000;}
+.gunwrap .title .button{position: absolute; right: 18px; top:20px;}
+.gunwrap .title span{float:right;border: 1px solid #e0e0e0;  cursor: pointer; font-size: 16px; height: 22px; line-height: 22px;  text-align: center; width: 34px;}
+#onLeft{border-left: 0;}
+.onScroll{color: #FE002F;}
+.scroll{height: 340px; position: relative; overflow: hidden;}
+.scroll .dl_id{height:100%; position: relative; overflow: hidden;}
+.scroll .dl_id dd{height:339px; border-top: 1px solid ; float: left; margin-left: 14px; width: 234px; text-align: center; background: #fafafa;}
+.scroll .dl_id ul{overflow: hidden; position: absolute;}
+.scroll .dl_id ul li{overflow: hidden; float:left;}
+.scroll .dl_id dd img{margin: 0 auto;}
+.scroll .dl_id dd h4{line-height: 25px; font-size: 12px; }
+.scroll .dl_id dd h4 a{color:#333;}
+.scroll .dl_id dd a{text-decoration: none;}
+.scroll .dl_id dd p{line-height: 24px;}
+.scroll .dl_id dd p a{color: #999;}
+.scroll .dl_id dd span{display: block; line-height: 24px; font-weight: 900; color: #ff0000;}
+#goods{overflow: hidden; padding-bottom: 34px; background: #f8f8f8; margin-top: 30px;}
+.fitting{margin:0  auto; width: 1263px; }
+
+.fitting .g_top{padding-bottom: 4px;}
+.fitting .g_same h3{line-height: 60px; font-size: 22px; margin-left: 14px; padding-left: 4px;}
+.fitting .g_same .main{overflow: hidden;width: 100%;}
+.main li{float:left; height:300px; width:233px; margin-left: 14px;}
+.fitting .g_same a{text-decoration: none;color: black;}
+.fitting .g_same dl{float:left; height: 300px;overflow: hidden;}
+.fitting .g_same dl dd{float: left; margin-left: 14px; width: 233px; height: 300px; text-align: center; background: #fff;}
+.fitting .g_same dl dd .img{margin-top: 45px }
+.fitting .g_same dl dd h4{font-size: 12px; line-height: 26px;}
+.fitting .g_same dl dd p{line-height: 26px; color: #fe002f;}
+.fitting .g_same dl dd span{line-height:38px; color:#999;}
+.netTV{width: 100%; margin-top:58px; height: 346px;}
+.netTV h3{line-height: 60px; font-size: 22px; margin-left: 14px}
+.netTV h3 a{text-decoration: none;color: black;}
+.netTV dl{width: 100%;overflow: hidden; }
+.netTV dl dd{float: left; margin-left: 14px; text-align: center; width: 296px; overflow: hidden; height: 286px; background: #fff;}
+.netTV dl dd p{width: 296px; height: 180px; position: relative;}
+.netTV dl dd p img{width: 100%; height: 100%; cursor:pointer;}
+.netTV dl dd p a{position:absolute; width: 36px; height: 23px; left: 21px; bottom: 10px; background: url(../img/video01.png)no-repeat -20px -147px; }
+.netTV dl dd p a:hover{background: url(../img/video02.png)no-repeat -20px -147px; }
+.netTV dl dd .a{display:block; line-height: 27px; text-decoration: none; color:#000; padding-top: 33px;}
+.netTV dl dd span{line-height: 26px; color:#BFBFBF; display:block; }
+下部内容
+.site_footer{padding: 50px 0; background: #f3f3f3 url(../img/footer-bg.png)no-repeat 100% 100%; overflow: hidden; height: 164px;}
+.box{margin: 0 auto; width: 1000px;overflow: hidden; }
+.box .site_left{ display: inline;float: left; margin-left: 92px; width: 204px; height: 100px;}
+.box .site_left h2{overflow: hidden;}
+.box .site_left p{line-height: 20px; padding-top: 14px;}
+.box .site_right{display: inline; float: right; margin-right: 70px; width: 500px; height: 164px;}
+.box .site_right h4{line-height: 20px; font-size: 12px;}
+.box .site_right p{text-indent: 2em; line-height: 20px;}

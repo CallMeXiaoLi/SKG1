@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录页面</title>
+		<link rel="stylesheet" type="text/css" href="../css/enter.css"/>
+		<script src="../js/jquery-1.11.3.js" type="text/javascript"></script>
+		<script src="../js/cookie.js" type="text/javascript"></script>
+		<script src="../js/enter.js" type="text/javascript"></script>
+		
+		<script src="../js/common.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<!-- 头部-->
+		<div id = "site_top" class = "site">
+			<div class = "tp_1">
+				<a class = "topNav" href="javascript:;"><span class = "bg1"></span>微博</a>
+				<a class = "topNav" href="javascript:;"><span class = "bg2"></span>微信</a>
+				<a class = "topNav" href="javascript:;"><span class = "bg3"></span>SKG社区</a>
+				<a class = "topNav" href="javascript:;"><span class = "bg4"></span>SKG+硅谷孵化园</a>
+			</div>
+			<div class = "fr">				
+				<div class = "tp_2">
+					<span class = "span s1"><a class = "topNav" class = "topA topNav" href="javascript:;"><span class = "bg4"></span>购物车( <em class = "carNum">0</em> )</a></span>
+					<span class = "span s2"><a class = "topNav" href="login.html">注册有惊喜</a></span>
+					<span class = "span s2"><a class = "topNav" href="login.html">登录</a></span>		
+				</div>
+				<div class = "tp_3">
+					<p class = "s3"><a class = "topNav" href="javascript:;">我的账户<span class = "bg6"></span></a></p>
+					<p class = "account_list">
+						<a class = "a_fist" href = "javascript:;"><span></span>我的账户</a>
+						<a class = "a_ft" href = "javascript:;">我的订单</a>
+						<a class = "a_ft" href = "javascript:;">使用评论</a>
+						<a class = "a_ft" href = "javascript:;">现金积分</a>
+						<a class = "a_ft" href = "javascript:;">优惠券</a>
+						<a class = "a_ft" href = "javascript:;">我的收藏</a>
+					</p>
+				</div>
+				<div class = "tp_4">
+					<span class = "span_s"><a class = "topNav a_t" href="javascript:;">手机版<span class = "bg6"></span></a></span>
+					<p class = "app_code">
+						<img src="../img/code.jpg" alt ="扫描二维码下载APP"/>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- 导航栏-->
+		<div id = "nav" class = "site">
+			<div class = "logo">
+				<a href = "javascript:"><img src= "../img/site-logo.png" alt="" /></a>
+			</div>
+			<ul class = "nav_ul">
+				<li id = "id_li1" class = "nav_li">
+					<p class = "p1_id"><a href="javascript:;">所有产品</a></p>
+					<div id = "me_id" class = "select same_th">
+						<ul  class = "menu">
+							<li id = "menu_id1" class = "child"></li>
+							<li id = "menu_id2" class = "child"></li>
+							<li id = "menu_id3" class = "child"></li>
+							<li id = "menu_id4" class = "child"></li>
+							<li id = "menu_id5" class = "child"></li>
+							<li id = "menu_id6" class = "child"></li>  
+						</ul>
+					</div> 
+
+				</li>
+				<li class = "nav_li"><p class = "p1_id"><a href="javascript:;">美容护肤</a></p></li>
+				<li id = "id_li3" class = "nav_li">
+					<p class = "p1_id"><a href="javascript:;">厨房电器</a></p>
+					<div id = "kit_id" class = "game_two same_th">
+						<ul id = "kit" class = "menu kit_nav"></ul> 
+					</div>
+				</li>
+				<li id = "id_li4" class = "nav_li">
+					<p class = "p1_id"><a href="javascript:;">原汁机</a></p>
+					<div id = "jMachine" class = "game_two same_th">
+						<ul class = "menu kit_nav"></ul>
+					</div> 
+				</li>
+				<li class = "nav_li"><p class = "p1_id"><a href="javascript:;">SkG服务</a></p></li>
+				<li class = "nav_li"><p class = "p1_id"><a href="javascript:;">SKG社区</a></p></li>
+				<li class = "nav_li"><p class = "p1_id"><a href="javascript:;">了解SKG</a></p></li>
+							</ul>
+							<div class= "nav_right">
+				<p class = "nav_search">
+					<a href="#">烤箱</a>
+					<a href="#">原汁机</a>
+				</p>
+				<input id="search_keywords_id" class="search_input " type="text" value="">
+				<a class="search_btn"  skgactionprop="search" skgaction="btn"  href="javascript:;"></a>
+			</div>	  
+		</div>	
+		<!--注册表单-->
+		<div class = "main site">
+			<div class = "form">
+				<ul>
+					<li><a href="#">新朋友？注册</a><span class = "sel"></span></li>
+					<li class = "setBg"><a href="#">老会员？登录</a><span class = "sel "  style = "display: block"></span></li>
+				</ul>
+				<div class = "box1 div" >
+					<img  class = "img" src="../img/about-hot.jpg" alt="" />
+					<form class = "form1" action="" method="post">
+						<dl>
+							<dt>手机：</dt>
+							<dd><input id = "mobile" class = "txt" type = "text" placeholder = "请填写正确的手机号码" /><span class = "s_span" >或</span><a class = "s_a" href="#">邮箱注册</a></dd>
+							<dt>请设置密码：</dt>
+							<dd class = "password_box"><input id = "password" class = "txt" type = "text" placeholder = "密码须是6-20位字母、数字或符号" /><a class = "visible" href="#"></a></dd>
+							<dt>验证码：</dt>
+							<dd><input id = "test_code" class = "txt2" type = "text" placeholder = "请输入验证码"  /><span class = "p_span" ></span></dd>
+							<dt>手机验证码：</dt>
+							<dd><input id = "test_codes" class = "txt2" type = "text" placeholder = "请输入您收到的手机验证码" /><a class = "code" >获取验证码</a></dd>
+						</dl>
+						<input class = "btn" type="submit" value="注册" />
+					</form>
+					<div class = "boxx boxx1">
+						<p class = "prompt"></p>
+						<span class = "close">×</span>
+					</div>					
+				</div>
+				
+				<div class = "box2 div" style = "display: block">
+					<form class = "form2" action="" method="post">
+						<dl>
+							<dt>登录账号：</dt>
+							<dd><input id = "loginAccount" class = "txt" type = "text" placeholder = "你注册时填写的手机号，或邮箱" /></dd>
+							<dt>登录密码：</dt>
+							<dd><input id = "loginPassword" class = "txt" type = "password" placeholder = "请填写您的登录号码" /></dd>
+						</dl>
+						<p class = "mind"><input type="checkbox" class = "ck" /><span>记住我吧</span><a href="#">忘记密码</a></p>
+						<input class = "btn" type="submit" value="登录" />
+						
+					</form>
+					<div class = "registerBottom">
+						<p class= "ringUp">其他账号登录：</p>
+						<p class = "otherAccount"><span class = "s1"></span><a href="#">QQ登录</a><span class = "s2"></span><a href="#">微信登录</a><span class = "s3"></span><a class = "sina" href="">新浪微博登录</a></p>
+					</div>
+					<div class = "boxx boxx2">
+						<p class = "prompt"></p>
+						<span class = "close">×</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!--下部内容-->
+ 		<div class = "site site_footer">
+ 			<div class = "box">
+ 				<div class = "site_left">
+	 				<h2><a href="#"><img src="../img/logo_bottom.png" alt="" /></a></h2>
+	 				<p>中国区版权及品牌持有人：<br />SKG（中国）有限公司</p>
+ 				</div>
+ 				<div class = " site_right">
+ 					<h4>致SKG会员的一封信</h4>
+	 				<p>感谢你光顾SKG商城。</p>
+	 				<p>我们一直在思考，到底什么样的产品最能符合现代女性多元化+个性化的需求，以及什么样的设计能满足SKG用户对时尚健康的追求。SKG从产品研发、制造、销售到服务，每一个环节，我们都会用心倾听用户的声音，我们所有的设计灵感，都来自于用户的真实体验。我们希望把全球最好的设计和产品带给我们的会员，让她每一次购物都有超出预期的惊喜，也正因如此，SKG一直走在行业的前列，并获得了千万用户的喜爱。</p>
+ 				</div>
+ 			</div>
+ 		</div>
+ 		
+ 		<!--最底下内容-->
+		<div class = "site modify">
+			<div class = "bottom">
+				<ul>
+					<li class = "li">
+						<dl>
+							<dt>网站</dt>
+							<dd>
+								<a href="#">
+									<i class = "America i-country"></i>
+									SKG U.S.A 
+								</a>
+							</dd>
+							<dd>
+								<a href="#">
+									<i class = "Polska i-country"></i>
+									SKG Polska  
+								</a>
+							</dd>
+							<dd>
+								<a href="#">
+									<i class = "Malaysia i-country"></i>
+									SKG Malaysia 
+								</a>
+							</dd>
+							<dd>
+								<a href="#">
+									<i class = "tata"></i>
+									SKG社区 
+								</a>
+							</dd>
+						</dl>
+					</li>
+					<li class = "li">
+						<dl>
+							<dt>关于我们</dt>
+							<dd>
+								<a href="#">联系我们</a>
+							</dd>
+							<dd>
+								<a href="#">版权声明</a>
+							</dd>
+							<dd>
+								<a href="#">我要反馈</a>
+							</dd>
+							<dd>
+								<a href="#">招募合伙人</a>
+							</dd>
+						</dl>
+					</li>	
+					<li class = "li">
+						<dl>
+							<dt>关注我们</dt>
+							<dd>
+								<a class = "wechat f_attention" href="#"></a>
+							</dd>
+							<dd>
+								<a class = "f_attention f_wb" href="#"></a>
+							</dd>
+							<dd>
+								<a class = "f_attention f_facebook" href="#"></a>
+							</dd>
+							<dd>
+								<a class = "f_attention f_twitte" href="#"></a>
+							</dd>
+							<dd>
+								<a class = "f_attention f_youtube" href="#"></a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dd>
+								<a class = "modify_pic bg1" href="#"></a>
+								<a class = "modify_pic bg2" href="#"></a>
+								<a class = "modify_pic bg3" href="#"></a>
+								<a class = "modify_pic bg4" href="#"></a>
+								<a class = "modify_pic bg5" href="#"></a>
+								<a class = "modify_pic bg6" href="#"></a>
+							</dd>
+							<p class = "modify_copy"><a href="#">备案号：粤ICP备13079021号-1</a></p>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<p class = "foot_links">
+				<span>友情链接：</span>
+				<a href="#">品牌百科</a>
+				<a href="#">耐克</a>
+				<a href="#">精工手表官网</a>
+				<a href="#">二手家电</a>
+				<a href="#">中国电网</a>
+				<a href="#">内增高鞋</a>
+				<a href="#">长春家具</a>
+				<a href="#">skg百科</a>
+				
+			</p>
+		</div>
+		
+	</body>
+</html>

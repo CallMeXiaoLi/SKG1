@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta charset="UTF-8">
+
+
+ 
+<script src="adw.js" async="" type="text/javascript"></script><script src="hm.js"></script><script src="jquery-1.11.2.js"></script>
+<script src="jquery.cookie.js"></script>
+<script src="verifydata.js"></script>
+<!--[if lte IE 7]>
+<script src="https://login.skg.com/scripts/storefront/json2.js"></script>
+<![endif]-->
+<script src="ajaxupload.js"></script>
+<script src="jquery.qrcode.min.js"></script>
+<title>登录和注册_SKG官网</title>
+
+<script type="text/javascript">
+	var DynPath = "http://d.skg.com";
+	var staticPath = 'http://www.skg.com';
+	var staticDynPath = "http://d.skg.com";
+	var domainStr = '.skg.com';
+	var __ctxPath = "http://www.skg.com";
+	var baseUrl = __ctxPath + "/storefront/member";
+	var baseHttpsUrl =  "https://login.skg.com/storefront/member";
+	var __httpsPath = "https://login.skg.com";
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="index.css" media="all">
+</head>
+<body>
+	<input id="pageMark" value="登陆注册页" type="hidden">
+<div class="site_top">
+	<div class="wrap">
+		<div class="fl">
+			<a class="topNav" href="http://weibo.com/standardklassegut" title="SKG生活" target="_top" skgaction="url" skgactionprop="weibo" rel="nofollow"><i class="ico_top4"></i>微博</a>
+			<a class="topNav" href="javascript:;" dialog="#WechatBox" skgaction="btn" skgactionprop="dialog_weixin" rel="nofollow"><i class="ico_top3"></i>微信</a>
+			<a class="topNav" href="http://life.skg.com/" target="_top" skgaction="url" skgactionprop="tribe"><i class="ico_top1"></i>SKG社区</a>
+			<a class="topNav" href="http://open.skg.com/" target="_top" rel="nofollow"><i class="ico_top2"></i>SKG+硅谷孵化园</a>
+			<!-- <a class="topNav top_about" href="http://www.skg.com/doc/about/group.htm" title="SKG生活" target="_blank" rel="nofollow">了解SKG</a> -->
+		</div>
+		<div class="fr fr_relative">
+			<span class="label"><span class="ico_top10"></span><a href="http://www.skg.com/cart/show.html?ftlUrl=/storefront/product/shopCar" class="" skgaction="btn" skgactionprop="dialog_shopcar" rel="nofollow">购物车 ( <var id="headerCartNumber">1</var> )</a></span>
+				<span class="top_line">|</span>
+			<div id="beforeLogin" class="login label">
+
+				
+				
+				
+				
+			</div>
+			<div id="afterLogin" class="login label" style="display: none;">
+				<span class="label" id="myAccount"></span>
+				<span class="label"><a dialog="#DateSign" href="http://www.skg.com/storefront/member/memberInfo.html#DateSign" skgaction="url" skgactionprop="myUsablePoints">积分：<strong id="myUsablePoints">0</strong></a></span>
+				<span class="label"><a href="javascript:;" id="logout">退出登录</a></span>
+			</div>
+			<div class="label member HoverOn">
+				<span><a href="http://www.skg.com/storefront/member/memberInfo.html" class="account" skgaction="url" skgactionprop="memberInfo" rel="nofollow">我的帐户 <i class="ico_top5"> </i></a></span>
+				<span class="top_line">|</span>
+				<div class="account_list AccountList">
+					<a href="http://www.skg.com/storefront/member/toMyOrder.html" skgaction="url" skgactionprop="myOrder">我的订单</a>
+					<a href="http://www.skg.com/storefront/member/memberInfo.html#UseComment" skgaction="url" skgactionprop="userComment">使用评论</a>
+					<a href="http://www.skg.com/storefront/member/memberInfo.html#CashIntegral" skgaction="url" skgactionprop="CashIntegral">现金积分</a>
+					<a href="http://www.skg.com/storefront/member/memberInfo.html#MyCoupon" style="position: relative;" skgaction="url" skgactionprop="myOrder">优惠券<p style="position: absolute; top: -4px; left: 45px; display: none;" class="CertificateViewFlag"><img src="yhj_dd.png" alt="优惠券提示"></p></a>
+					<a href="http://www.skg.com/storefront/member/myFavorite.html" target="_top" skgaction="url" skgactionprop="myCollect">我的收藏</a>
+				</div>
+			</div>
+			<div class="label app HoverOn">
+				<span class="icon_phone"><a href="http://www.skg.com/app/qr-code.html" target="_top" class="app_link" skgaction="url" skgactionprop="appDown" rel="nofollow"><span class="i-m"><i></i></span>手机版 <i class="ico_top5"></i></a></span>
+
+				<div class="app_code"><img src="code.jpg" alt="扫描二维码下载APP" width="120"></div>
+			</div>
+			
+		</div>
+	</div>
+</div><div style="z-index: 1;" class="site_header">
+	<div class="wrap">
+		<a href="http://www.skg.com/" class="siteLogo"><img src="site-logo.png" title="SKG官方网站，SKG享受品质生活!" alt="SKG官方网站，SKG享受品质生活!"></a> 
+<div class="site_nav SiteNav">
+	<div id="navId">
+		<div class="navbox">
+			<ul class="navContent">
+
+				<li class="nav"><a href="http://www.skg.com/" class="navTxt" skgaction="url" skgactionprop="index">首页</a></li>
+				<li class="nav" style="position: inherit;">
+					<div class="label appall HoverOn">
+						<span class="icon_phone"><a href="http://www.skg.com/category/" class="navTxt" skgaction="url" skgactionprop="all" target="_top" style="height: 74px;">所有产品</a></span>
+						<div class="all_categories">
+							<div class="catecon">
+								<ul>
+									 									<li><span class="bigcate"><a href="http://www.skg.com/Baking/" target="_top">厨房电器</a></span>
+										  <a href="http://www.skg.com/Baking/Oven.html" target="_top">电烤箱</a>  <a href="http://www.skg.com/Baking/Fryingmachine.html" target="_top">煎烤机</a>  <a href="http://www.skg.com/Baking/BreadMachine.html" target="_top">面包机</a>  <a href="http://www.skg.com/Baking/Radiantcooker.html" target="_top">电陶炉</a>  <a href="http://www.skg.com/Baking/HealthPot.html" target="_top">养生壶</a>  <a href="http://www.skg.com/Baking/waterclarifier.html" target="_top">净水器</a>  <a href="http://www.skg.com/Baking/electrickettle.html" target="_top">电热水壶</a>  <a href="http://www.skg.com/Baking/electrichot.html" target="_top">电热水瓶</a>  <a href="http://www.skg.com/Baking/BakingFacilities.html" target="_top">烘焙配套</a>  </li> 									<li><span class="bigcate"><a href="http://www.skg.com/BabyGrowUp/" target="_top">原汁机</a></span>
+										  <a href="http://www.skg.com/BabyGrowUp/JuiceMachine.html" target="_top">原汁机</a>  <a href="http://www.skg.com/BabyGrowUp/CookingMachine.html" target="_top">料理机</a>  <a href="http://www.skg.com/BabyGrowUp/Juicer.html" target="_top">榨汁机</a>  </li> 									<li><span class="bigcate"><a href="http://www.skg.com/SlimmingExercise/" target="_top">运动健康</a></span>
+										  <a href="http://www.skg.com/SlimmingExercise/Treadmill.html" target="_top">跑步机</a>  <a href="http://www.skg.com/SlimmingExercise/Stepper.html" target="_top">踏步机</a>  <a href="http://www.skg.com/SlimmingExercise/ShapingMachine.html" target="_top">塑身机</a>  <a href="http://www.skg.com/SlimmingExercise/Spinning.html" target="_top">健身车</a>  </li> 									<li><span class="bigcate"><a href="http://www.skg.com/SkinCare/" target="_top">个人护理</a></span>
+										  <a href="http://www.skg.com/SkinCare/CosmeticInstrument.html" target="_top">美容仪</a>  <a href="http://www.skg.com/SkinCare/CleansingInstrument.html" target="_top">洁面仪</a>  <a href="http://www.skg.com/SkinCare/SteamingApparatus.html" target="_top">蒸脸仪</a>  <a href="http://www.skg.com/SkinCare/MassageShawls.html" target="_top">按摩披肩</a>  <a href="http://www.skg.com/SkinCare/SushenBelt.html" target="_top">塑身腰带</a>  </li> 									<li><span class="bigcate"><a href="http://www.skg.com/LivingAbroad/" target="_top">互联网家电</a></span>
+										  <a href="http://www.skg.com/LivingAbroad/Ice.html" target="_top">冰箱  冰吧   </a>  <a href="http://www.skg.com/LivingAbroad/Winecabinet.html" target="_top">红酒柜</a>  <a href="http://www.skg.com/LivingAbroad/washer.html" target="_top">洗衣机</a>  <a href="http://www.skg.com/LivingAbroad/Electronics.html" target="_top">热水器</a>  <a href="http://www.skg.com/LivingAbroad/Rangehood.html" target="_top">吸油烟机</a>  <a href="http://www.skg.com/LivingAbroad/hotplate.html" target="_top">燃气灶</a>  <a href="http://www.skg.com/LivingAbroad/disinfection.html" target="_top">消毒柜</a>  <a href="http://www.skg.com/LivingAbroad/cudiantaozhuang.html" target="_top">厨电套装</a>  </li> 									<li><span class="bigcate"><a href="http://www.skg.com/Lifenursing/" target="_top">生活电器</a></span>
+										  <a href="http://www.skg.com/Lifenursing/Hangingironing.html" target="_top">挂烫机</a>  <a href="http://www.skg.com/Lifenursing/dryer.html" target="_top">干衣机</a>  <a href="http://www.skg.com/Lifenursing/Inaddition.html" target="_top">除螨仪</a>  <a href="http://www.skg.com/Lifenursing/cleaner.html" target="_top">空气净化器</a>  <a href="http://www.skg.com/Lifenursing/Humidifier.html" target="_top">加湿器</a>  </li> 
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</li>   				<li class="nav"><a href="http://www.skg.com/SkinCare/" class="navTxt Smart1" target="_top">美容个护</a>
+					<div style="left: -363px; width: 1280px;" class="subnavBox">
+						<div class="subNav_goods two">
+							<ul class="goods_list">     
+							</ul>
+						</div>
+					</div></li> 				<li class="nav"><a href="http://www.skg.com/Baking/" class="navTxt Toaster" target="_top">厨房电器</a>
+					<div style="left: -447px; width: 1280px;" class="subnavBox">
+						<div class="subNav_goods two">
+							<ul class="goods_list">   		<li>
+			<a href="http://www.skg.com/product/510000153004381.html" target="_top" class="gitem">
+				<img class="gimg" src="7d543dda-2725-4950-9e01-b90fc7971df9.jpg" alt="云智能家用电子式烤箱 SKG1733">
+				<p class="gdesc"></p>
+				<p class="gname">云智能家用电子式烤箱 SKG1733</p>
+				<p class="gdesc"></p>
+				<p class="gdesc"></p>
+				<p class="gprice"><var>499</var>元</p>
+
+				<span class="gbuy abtn confirm">了解更多 &gt;</span>
+				
+				<div class="clearperfect"></div>
+			</a>
+		</li>
+		<li>
+			<a href="http://www.skg.com/product/510000258009496.html" target="_top" class="gitem">
+				<img class="gimg" src="1d871311-1d7d-4e28-bfe9-7f6bbcfff818.jpg" alt="多功能智能预约面包机（不锈钢-银） SKG3926">
+				<p class="gdesc"></p>
+				<p class="gname">多功能智能预约面包机（不锈钢-银） SKG3926</p>
+				<p class="gdesc"></p>
+				<p class="gdesc"></p>
+				<p class="gprice"><var>599</var>元</p>
+
+				<span class="gbuy abtn confirm">了解更多 &gt;</span>
+				
+				<div class="clearperfect"></div>
+			</a>
+		</li>
+  
+							</ul>
+						</div>
+					</div></li> 				<li class="nav"><a href="http://www.skg.com/BabyGrowUp/" class="navTxt Extractor" target="_top">原汁机</a>
+					<div style="left: -531px; width: 1280px;" class="subnavBox">
+						<div class="subNav_goods two">
+							<ul class="goods_list">   		<li>
+			<a href="http://www.skg.com/product/510000222064071.html" target="_top" class="gitem">
+				<img class="gimg" src="47e7ffed-9951-4d9e-aa65-c3f45e294c66.jpg" alt="商用大口径家用多功原汁机 SKG2081">
+				<p class="gdesc"></p>
+				<p class="gname">商用大口径家用多功原汁机 SKG2081</p>
+				<p class="gdesc"></p>
+				<p class="gdesc"></p>
+				<p class="gprice"><var>899</var>元</p>
+
+				<span class="gbuy abtn confirm">了解更多 &gt;</span>
+				
+				<div class="clearperfect"></div>
+			</a>
+		</li>
+		<li>
+			<a href="http://www.skg.com/product/510000276004144.html" target="_top" class="gitem">
+				<img class="gimg" src="f7122b17-ec86-46ac-9ad7-241b199a1cf1.jpg" alt="家用全自动高速破壁机 SKG 2089">
+				<p class="gdesc"></p>
+				<p class="gname">家用全自动高速破壁机 SKG 2089</p>
+				<p class="gdesc"></p>
+				<p class="gdesc"></p>
+				<p class="gprice"><var>1299</var>元</p>
+
+				<span class="gbuy abtn confirm">了解更多 &gt;</span>
+				
+				<div class="clearperfect"></div>
+			</a>
+		</li>
+  
+							</ul>
+						</div>
+					</div></li>  
+				<li class="nav"><a href="http://www.skg.com/service/" target="_top" class="navTxt" rel="nofollow">SKG服务</a></li> 				<li class="nav"><a href="http://life.skg.com/" target="_top" class="navTxt">SKG社区</a></li> 
+				<li class="nav"><a href="http://www.skg.com/about/group.html" target="_top" rel="nofollow" class="navTxt">了解SKG</a></li>
+				<!-- <li class="nav" ><a
+					href="http://www.skg.com/storefront/activity/investment.html" target="_blank"
+					rel="nofollow" class="navTxt shakeTxt">加盟开店</a></li> -->
+					
+			</ul>
+		</div>
+	</div>
+</div>
+
+		<div class="fr">
+			<div class="site_search clearfix TriggerArea">
+				<div class="search_span">
+					<a href="javascript:;">烤箱</a><a href="javascript:;">原汁机</a>
+				</div>
+				<input class="search_input SubmitTrigger" id="search_keywords_id" value="" type="text"> <a href="javascript:;" class="search_btn SubmitRespond" skgaction="btn" skgactionprop="search"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<form action="http://www.skg.com/search.html" id="searchForm" method="POST">
+	<input name="keywords" id="search_keywords_name" value="" type="hidden">
+	<input name="pageSize" id="search_keywords_size" value="50" type="hidden">
+</form>
+
+	
+	<div class="y_blank20"></div>
+	<div class="w pass_box" style="width: 600px; border: 1px solid rgb(204, 204, 204);">
+		<div class="tab_frame TabFrame">
+			<ul class="tab_header clearfix">
+				<li class="tab_trigger  TabTrigger"><a href="javascript:;" skgaction="btn" skgactionprop="newUserTab">新朋友？注册</a><i></i></li>
+				<li class="tab_trigger on TabTrigger"><a href="javascript:;" skgaction="btn" skgactionprop="LoginTab">老会员？登录</a><i></i></li>
+			</ul>
+			<div class="tab_body">
+				<div class="tips_frame TipsFrame RegisterCheck">
+				<div class="tab_item  TabItem" style="height: 360px;">
+					<table class="form_table">
+							<tbody><tr>
+								<th></th>
+                           		<td class="ad">
+											<img src="6f58803c-673f-40c0-97ba-67cda7438388.jpg">
+                           		
+                           		</td>
+							</tr>
+							<tr>
+								<th colspan="2" align="left">
+                                <div style="overflow: hidden; height: 40px; width: 100%;">
+	                           <div style="position: relative; top: 0px; left: 0px;">
+		                        <div class="blue_mailx" style="padding-left: 0px;">
+		                        	<div class="moveTitle">手机： </div>
+		                        	<input value="" class="itext IText MobileInput" maxlength="11" placeholder="请填写正确的手机号码" verify-data="mobile" tabindex="1" style="float: left;" type="text">
+		                        	<span class="typeChage"> 或 <a href="javascript:;" class="PasswordChange">邮箱注册</a></span>
+		                       </div> 
+		                       <div class="red_Phonex">
+			                  		 <div class="moveTitle">邮箱： </div>
+			                  		 <input value="" class="itext IText EmailInput" placeholder="请填写最常用的邮箱" style="float: left; margin-left: 0px;" type="text">
+			                  		 <span class="typeChage"> 或 <a href="javascript:;" class="PasswordChange">手机注册</a></span>
+		                       </div>
+	                           </div>
+                               </div>
+                           </th>
+							</tr>
+							<tr>
+								<th width="142">请设置密码：</th>
+								<td class="td_pr" width="458">
+									<span class="set_pwd2"><input value="" id="setPwd2" class="itext IText password" placeholder="密码须是6-20位字母、数字或符号" verify-data="password" tabindex="2" type="text"></span>
+									<label id="togglePassword2" class="togglePassword"></label>
+								</td>
+							</tr>
+							<tr id="yzm_reg">
+								<th width="142">验证码：</th>
+								<td width="458">
+									<input value="" id="reg_code" name="code" class="itext IText ImgCaptchaCode" verify-data="captha" placeholder="请输入验证码" tabindex="3" style="width: 165px;" type="text">
+									<img id="imgCaptchaCode" name="imgCaptchaCode" src="generateimage.html" onclick="refreshImageTmp('imgCaptchaCode')" alt="换一张" title="换一张" height="40" border="0">
+								</td>
+							</tr>
+							<tr class="yzm">
+								<th>手机验证码：</th>
+								<td><input value="" class="itext IText mobilecodeInput" verify-data="phoneCaptha" style="width: 165px;" placeholder="请输入您收到的手机验证码" tabindex="4" type="text"><a href="javascript:;" class="abtn confirm MobileCheck" attr-flag="register" style="width: 70px; padding: 10px 19px;"><span class="CheckDefault">获取验证码</span><span class="CheckActive" style="display: none;">已发送(<var class="CheckTime">60</var>)</span></a></td>
+							</tr>
+							<tr>
+								<td colspan="2" align="center">
+									<div class="submit"><a href="javascript:;" class="abtn confirm CheckSubmit zc" id="register2" style="width: 250px;">注 册</a></div>
+								</td>
+							</tr>
+					</tbody></table>
+				</div>
+				<div class="tips_box error TipsBox"><a href="javascript:;" class="tips_close TipsClose">×</a><p class="TipsCon"></p></div>
+				</div>
+				<div class="tips_frame LoginCheck">
+				<div id="iframe" class="tab_item on TabItem" style="height: 360px;">
+					<input id="source" name="source" value="" type="hidden">
+					<input id="direct" name="direct" value="http://www.skg.com/" type="hidden">
+					<input id="callType" name="callType" value="" type="hidden">
+					<input id="directCartId" name="directCartId" value="" type="hidden">
+					<input id="verifyLogin" name="verifyLogin" value="" type="hidden">
+					<form action="https://login.skg.com/storefront/member/toLogin.html?redirectUrl=http%3A%2F%2Fwww.skg.com%2F&amp;tab=undefined" method="" target="">
+					<table class="form_table">
+						<tbody><tr>
+							<th width="170">登录账号：</th>
+							<td><input value="" class="itext IText" placeholder="您注册时填写的手机号码，或邮箱" verify-data="loginName" type="text"></td>
+						</tr>
+						<tr>
+							<th>登录密码：</th>
+							<td><input class="itext IText" placeholder="请填写您的登录密码" verify-data="loginPassword" type="password"></td>
+						</tr>
+						<tr>
+								<th></th>
+								<td>
+								<p style="color: rgb(153, 153, 153); width: 200px; display: inline-block;"><input class="rebpassword" placeholder="记住我吧" verify-data="isReMe" type="checkbox"> 记住我吧</p>
+								<p style="display: inline-block; width: 96px; text-align: right;"><a href="javascript:;" class="ForgetPassword" skgaction="btn" skgactionprop="forGetPass">忘记密码</a></p></td>
+							</tr>
+						<tr>
+							<td colspan="2">
+								<div class="submit"><input class="form_submit CheckSubmit" value="登录" type="submit"></div>
+							</td>
+						</tr>
+					</tbody></table>
+					</form>
+						
+					<dl class="other_account">
+						<dt>其他账号登录：</dt>
+						<dd class="clearfix">
+							<a href="https://graph.qq.com/oauth2.0/authorize?response_type=code&amp;client_id=101230158&amp;redirect_uri=http%3A%2F%2Fwww.skg.com%2Fstorefront%2Fmember%2FqqLogin.html&amp;scope=get_user_info,list_album,upload_pic,do_like" class="qq_login" skgaction="url" skgactionprop="QQLogin">QQ登录</a>
+							<a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx9f4fab7bc1b07e76&amp;redirect_uri=http%3A%2F%2Fwww.skg.com%2Fstorefront%2Fmember%2FweixinLogin.html&amp;response_type=code&amp;scope=snsapi_login" class="wx_login" skgaction="url" skgactionprop="WXLogin" rel="nofollow">微信登录</a>
+							<a href="https://api.weibo.com/oauth2/authorize?client_id=1547815101&amp;scope=follow_app_official_microblog&amp;response_type=code&amp;redirect_uri=http://www.skg.com/storefront/member/weiboLogin.html" class="wb_login" target="_top" skgaction="url" skgactionprop="WBLogin" rel="nofollow">新浪微博登录</a> 
+						</dd>
+					</dl> 
+				</div>
+				<div class="tips_box error TipsBox"><a href="javascript:;" class="tips_close TipsClose">×</a><p class="TipsCon"></p></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="y_blank20"></div>
+	
+	<!-- <div class="toolbar">
+	<ul>
+		<li class="siteShopCart">
+			<a href="http://www.skg.com/cart/show.htm?ftlUrl=/storefront/product/shopCar" target="_blank" skgAction="btn" skgActionProp="dialog_shopcar" rel="nofollow">
+				购物车
+				<span id="toolBarCartNumber">0</span>	
+			</a>
+		</li>
+		<li class="siteCustom">
+			<a href="javascript:;" skgAction="btn" skgActionProp="kf" rel="nofollow"></a>
+			<div class="siteQRCode">
+				<span class="siteQRCodeTitle">微信扫一扫<br/>公众号咨询</span>
+				<img src="http://www.skg.com/styles/storefront/img/common/wechat-code2.png" width="90" height="90" alt="扫描关注二维码"/>
+				<div class="siteQQ">
+				</div>
+			</div>
+		</li>
+		<li class="siteApp">
+			<a href="http://www.skg.com/app/qr-code.htm" target="_blank" skgAction="url" skgActionProp="appDown"  rel="nofollow">APP下载</a>
+		</li>
+		<li class="toTop"><a href="javascript:;" skgAction="btn" skgActionProp="toTop"  rel="nofollow" >回到顶部</a></li>
+	</ul>
+</div> -->
+
+
+	
+<div class="site_footer">
+	<div class="site_about">
+		<div class="w clearfix">
+			<div class="about_right">
+				<p>致SKG会员的一封信</p>
+				<div class="y_blank12"></div>
+				<p style="text-indent: 2em;">感谢你光顾SKG商城。</p>
+				<p style="text-indent: 2em; display: block; width: 480px;">
+				我们一直在思考，到底什么样的产品最能符合现代女性多元化+个性化的需求，以及什么样的设计能满足SKG用户对时尚健康的追求。SKG从产品研发、制造、销售到服务，每一个环节，我们都会用心倾听用户的声音，我们所有的设计灵感，都来自于用户的真实体验。我们希望把全球最好的设计和产品带给我们的会员，让她每一次购物都有超出预期的惊喜，也正因如此，SKG一直走在行业的前列，并获得了千万用户的喜爱。</p>
+				<div class="y_blank12"></div>
+				<p></p>
+			</div>
+			<div class="about_left">
+				<a href="http://www.skg.com/" title="SKG生活-SKG集团旗下官方商城"><img src="logo_bottom.png" alt="SKG生活-SKG集团旗下官方商城"></a>
+				<div class="y_blank05"></div>
+				<p>中国区版权及品牌持有人：</p>
+				<p>SKG（中国）有限公司</p>
+			</div>
+		</div>
+	</div>
+
+<div class="modify  modify_box">
+	<ul>
+		<li class="modify_lh">
+			<dl>
+				<dt>网 站</dt>
+				<dd>
+					<a href="http://us.skg.com/" target="_top" skgaction="url" skgactionprop="english" rel="nofollow">
+						<i class="i-country America"></i>SKG  U.S.A
+					</a></dd>
+				<dd>
+					<a href="http://www.skgpolska.pl/" target="_top" skgaction="url" skgactionprop="english" rel="nofollow">
+						<i class="i-country Polska"></i>SKG  Polska
+					</a>
+				</dd>
+				<dd>
+					<a href="http://skg.com.my/" target="_top" skgaction="url" skgactionprop="english" rel="nofollow">
+						<i class="i-country Malaysia"></i>SKG  Malaysia
+					</a>
+				</dd>
+				<dd>
+					<a href="http://life.skg.com/app/download.htm" target="_top" class="nav_main NavMain hang" rel="nofollow">
+						<i class="tata"></i>SKG社区
+					</a>
+				</dd>
+				
+				<!-- <dd>
+					<a href="http://www.skg888.com/"  target="_blank" skgAction="url" skgActionProp="skgLottery" rel="nofollow">
+						<i class="i-country Austria"></i>SKG彩票
+					</a>
+				</dd> -->
+
+			</dl>
+		</li>
+		<li class="modify_lh">
+			<dl>
+					<dt>关于我们</dt>
+					<!-- <dd><a href="http://www.skg.com/about/"  target="_blank" skgAction="url" skgActionProp="contactUs" rel="nofollow">了解SKG</a></dd> -->
+					<dd><a href="http://www.skg.com/about/contact.html" target="_top" skgaction="url" skgactionprop="contactUs" rel="nofollow">联系我们</a></dd>
+					<dd><a href="http://www.skg.com/about/copyright.html" target="_top" skgaction="url" skgactionprop="copyRight" rel="nofollow">版权声明</a></dd>
+					<dd><a href="http://www.skg.com/about/myComplain.html" target="_top" class="feedback" skgaction="url" rel="nofollow" skgactionprop="feedback">我要反馈</a></dd>
+					<dd><a href="http://www.skg.com/about/BrandStrength.html" target="_top" skgaction="url" skgactionprop="partner" rel="nofollow">招募合伙人</a></dd>
+			</dl>
+		</li>
+		<li class="modify_lh">
+			<dl>
+					<dt>关注我们</dt>
+					
+					<dd class="block"><a href="javascript:;" dialog="#WechatBox" title="SKG官方微信" rel="nofollow" class="wechat f_attention"></a></dd>
+					<dd class="block"><a href="http://weibo.com/standardklassegut" title="SKG新浪微博" target="_top" rel="nofollow" class="f_attention f_wb"></a></dd>
+					<!-- <dd><a href="http://life.skg.com" target="_blank" class="nav_main NavMain hang">生活攻略</a></dd> -->
+					<dd class="block"><a href="https://www.facebook.com/skgelectricllc/" target="_top" class="f_attention f_facebook" title="Facebook"></a></dd>
+					<dd class="block"><a href="https://mobile.twitter.com/Skgelectric" target="_top" class="f_attention f_twitter" title="Twitter"></a></dd>
+					<dd class="block"><a href="https://www.youtube.com/channel/UC2h5VqJNhi0rJcGFtjqnt3g" target="_top" class="f_attention f_youtube" title="Youtube"></a></dd>
+
+			</dl>
+		</li>
+		<li style="border-right: medium none; line-height: 0;">
+			<dl>
+					<dd style="line-height: 0;">
+					<a class="modify_pic" href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action" target="_top" rel="nofollow"><img src="ico-footer03.png" class="modify_ico" alt="经营性网站备案信息"></a>
+					<a class="modify_pic" href="yingyezhizhao.jpg" target="_top" rel="nofollow"><img src="ico-footer04.png" class="modify_ico" alt="营业执照信息公示"></a>
+					<a class="modify_pic" href="https://search.szfw.org/cert/l/CX20140721008886008536" target="_top" rel="nofollow"><img src="ico-footer01.png" class="modify_ico" alt="诚信网站"></a>
+					<a class="modify_pic" target="_top" rel="nofollow" href="http://www.anquan.org/authenticate/cert/?site=www.skg.com&amp;at=business"><img src="3ae16c67-9566-47d4-98f0-b06b2b6a8fe2.png" alt="安全联盟认证网站"></a>
+						<script src="seallogo.dll"></script>
+					<a id="_pingansec_bottomimagesmall_shiming" href="http://si.trustutn.org/info?sn=744151130018831222318&amp;certType=1" target="_top" rel="nofollow"><img src="d6e52ff2-07da-49d1-909c-0764229131e0.jpg" alt="360安全网站"></a>
+					<p class="modify_copy"><a class="modify_pic record" href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action" target="_top" rel="nofollow">备案号：粤ICP备13079021号-1 </a></p>
+					</dd>
+			</dl>
+		</li>
+	</ul>
+</div>
+
+
+</div>
+<div class="dialog_frame DialogFrame" id="WechatBox">
+	<b class="dialog_mask DialogMask"></b>
+	<div class="dialog_box DialogBox" style="width: 625px;">
+		<div class="dialog_body DialogBody">
+			<a href="javascript:;" class="dialog_close DialogClose">×</a>
+			<div class="wechat_box clearfix">
+				<img src="wechat-code.png" alt="扫描二维码关注">
+				<ul>
+					<li>&nbsp;&nbsp;如何添加微信关注？</li>
+					<li>【发现】点击【扫一扫】，扫描左侧二维码，添加关注。</li>
+					<li>【通讯录】点击右上角【添加朋友】搜号码，输入SKG官方</li>
+					<li>&nbsp;&nbsp;微信号【YES_SKG】，添加关注。</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="dialog_frame DialogFrame" id="AboutUsBox">
+	<b class="dialog_mask DialogMask"></b>
+	<div class="dialog_box DialogBox" style="width: 600px;">
+		<div class="dialog_header clearfix DialogHeader"><strong class="dialog_title">关于我们</strong><a href="javascript:;" class="dialog_close DialogClose">×</a></div>
+		<div class="dialog_body DialogBody">
+			<div class="aboutUs_box">
+				<h4><b></b><i></i>全国统一服务热线</h4>
+				<p>400-822-0888 （早8:30-晚20:00）</p><p>
+				</p><h4><b></b><i></i>团购咨询电话</h4>
+				<p>020-36693742</p>
+				<h4><b></b><i></i>客户投诉邮箱</h4>
+				<p>fw@skg.com（7*24小时在线服务）</p>
+				<h4><b></b><i></i>全国总部</h4>
+				<p>总机电话：400-822-0888</p>
+				<p>总机传真：+86-0757-26680999</p>
+				<p>地    址：广东省佛山市顺德区容桂镇边居委会天河路一号</p>
+				<p>邮政编码：528000</p>
+				<h4><b></b><i></i>广州分公司</h4>
+				<p>总机电话：020-36693742</p>
+				<p>地    址：广州市海珠区新滘中路聚德路299号龙腾18电子商务产业园2号楼首层</p>
+				<p>邮政编码：510000</p>
+			</div>
+		</div>
+		<div class="dialog_footer DialogFooter"><a href="javascript:;" class="abtn confirm DialogClose">OK！^_^</a></div>
+	</div>
+</div>
+<div class="dialog_frame DialogFrame" id="CopyRightBox">
+	<b class="dialog_mask DialogMask"></b>
+	<div class="dialog_box pass_box DialogBox">
+		<div class="dialog_header clearfix DialogHeader"><strong class="dialog_title">版权声明</strong><a href="javascript:;" class="dialog_close DialogClose">×</a></div>
+		<div class="dialog_body DialogBody">
+			<div class="dialog_con copyright_box">
+				<p>SKG生活是<small>■</small>艾诗凯奇（中国）有限公司<small>■</small>旗下B2C网站，网址：www.skg.com，ICP备案号：粤ICP备13079021号-1。</p>
+				<p>SKG生活上显示的所有内容，包括但不限于文字、商标、标识、按钮图标、图片、数据及软件等，禁止任何媒体、网站或个人在未经书面授权的情况下违法转载、修改、复制、发行、出售、发表或以其它方式利用。</p>
+				<p>任何未经书面授权下的转载、复制、发行、出售、发表都属于侵权行为，广东艾诗凯奇家居有限公司将保留追究侵权法律责任的权利。</p>
+			</div>
+		</div>
+		<div class="dialog_footer DialogFooter"><a href="javascript:;" class="abtn confirm DialogClose">OK！^_^</a></div>
+	</div>
+</div>
+<div class="tips_box error TipsBox GlobalTipsBox">
+	<a href="javascript:;" class="tips_close TipsClose">×</a>
+	<p>SKG女神温馨提示您：<strong class="TipsCon"></strong>^_^</p>
+</div>
+<script type="text/javascript" src="register.js"></script>
+<script type="text/javascript" src="login.js"></script>
+<script type="text/javascript" src="password.js"></script>
+<script type="text/javascript" src="md5.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<script>
+//百度统计代码  
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?a81f1f53064119d72fddfbf39314b768";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+
+var _adwq = _adwq || []; 
+_adwq.push(['_setAccount', 'xxjju']);
+_adwq.push(['_setDomainName', '.skg.com']);
+_adwq.push(['_trackPageview']); 
+
+(function() { 
+	var adw = document.createElement('script'); 
+	adw.type = 'text/javascript'; 
+	adw.async = true; 
+	adw.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://s') + '.emarbox.com/js/adw.js'; 
+	var s = document.getElementsByTagName('script')[0]; 
+	s.parentNode.insertBefore(adw, s); 
+})(); 
+</script> 
+	<script type="text/javascript">
+		$(function(){
+			$(".RegisterBox").parent().next().remove();
+			$(".RegisterBox").parent().remove();
+			$(".LoginBox").parent().next().remove();
+			$(".LoginBox").parent().remove();
+			if(getQueryString("tab")=="reg"){
+				$('.TabTrigger').eq(0).click();
+			}
+			$(".pass_box").show();
+		});
+		function getQueryString(name) {
+		    var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+		    var r = window.location.search.substr(1).match(reg);
+		    if (r != null) {
+		        return unescape(r[2]);
+		    }
+		    return null;
+		}
+
+	</script>
+
+
+<iframe id="emar_box_pv" src="index_1.html" style="width: 1px; border: 0px none; position: absolute; left: -100px; top: -100px; height: 1px;"></iframe></body>
+</html>

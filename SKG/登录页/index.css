@@ -1,0 +1,243 @@
+/* ::::: https://login.skg.com/styles/storefront/css/common.css?v=15111902 ::::: */
+
+body, h1, h2, h3, h4, h5, h6, hr, p, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, table, th, td { margin: 0px; padding: 0px; }
+h3, h4, h5, h6 { font-weight: normal; }
+cite, em, var { font-style: normal; }
+ul { list-style: outside none none; }
+body, input, textarea, select, button { font-family: "微软雅黑"; color: rgb(51, 51, 51); font-size: 12px; text-rendering: optimizelegibility; font-feature-settings: "liga", "kern"; }
+img { border: 0px none; }
+button, input, select, textarea { font-size: 100%; }
+table { border-collapse: collapse; border-spacing: 0px; }
+body { background-image: url('undefined'); background-attachment: fixed; }
+.clearfix::after { visibility: hidden; display: block; font-size: 0px; content: " "; clear: both; height: 0px; }
+.clearfix {  }
+.clearperfect { clear: both; height: 0px; overflow: hidden; }
+.y_blank05 { width: 100%; height: 5px; font-size: 0px; overflow: hidden; }
+.y_blank12 { width: 100%; height: 12px; font-size: 0px; overflow: hidden; }
+.y_blank20 { width: 100%; height: 20px; font-size: 0px; overflow: hidden; }
+.w { width: 1000px; margin: 0px auto; }
+.fl { float: left; display: inline; }
+.fr { float: right; display: inline; }
+.clearfix::after { visibility: hidden; display: block; font-size: 0px; content: " "; clear: both; height: 0px; }
+.clearfix {  }
+.clearperfect { clear: both; height: 0px; overflow: hidden; }
+.y_blank20 { width: 100%; height: 20px; font-size: 0px; overflow: hidden; }
+a { color: rgb(51, 51, 51); text-decoration: none; }
+a:hover { color: rgb(204, 17, 17); text-decoration: none; }
+.w { width: 1000px; margin: 0px auto; }
+.wrap { width: 1226px; margin: 0px auto; }
+.site_top { background: rgb(50, 50, 50) none repeat scroll 0% 0%; height: 40px; line-height: 40px; width: 100%; min-width: 1226px; }
+.site_top div.label { margin-right: 0px; }
+.site_top .label { float: left; margin-right: 12px; display: inline; color: rgb(191, 191, 191); }
+.site_top .label a { color: rgb(191, 191, 191); }
+.site_top .label a:hover { color: rgb(255, 255, 255); text-decoration: underline; }
+.site_top .login .label a:hover { color: rgb(255, 255, 255); text-decoration: underline; }
+.site_top .member { position: relative; }
+.site_top .member .account { float: left; width: 70px; height: 20px; line-height: 20px; padding-left: 10px; margin-top: 10px; }
+.site_top .member .account_list { display: none; position: absolute; z-index: 22; top: 30px; left: 0px; width: 80px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; padding-bottom: 5px; box-shadow: 0px 4px 4px rgb(213, 213, 213); }
+.site_top .member .account_list a { display: block; height: 24px; line-height: 24px; color: rgb(51, 51, 51); padding-left: 8px; }
+.site_top .member .account_list a:hover { color: rgb(204, 17, 17); text-decoration: underline; }
+.site_top .app { position: relative; }
+.site_top .app .app_link { float: left; width: 70px; height: 20px; line-height: 20px; padding-left: 10px; margin-top: 10px; }
+.site_top .app .app_code { display: none; position: absolute; z-index: 22; top: 30px; margin-right: -27px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; padding: 5px; box-shadow: 0px 4px 4px rgb(213, 213, 213); }
+.site_top .app .app_code img { display: block; }
+.site_top .app .i-m { width: 0px; height: 0px; display: inline-block; border-style: solid; border-color: rgb(191, 191, 191); border-width: 2px 1px 3px; line-height: 0; padding: 7px 6px 0px 0px; position: relative; right: 3px; top: 2px; }
+.site_top .app .i-m i { width: 2px; height: 1px; display: block; background-color: rgb(43, 43, 43); position: absolute; left: 2px; bottom: -2px; }
+.site_nav .appall {  }
+.site_nav .appall .all_categories { display: none; position: absolute; width: 100%; z-index: 2222; left: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; box-shadow: 0px 4px 4px rgb(213, 213, 213); }
+.site_nav .appall .all_categories .catecon { width: 1226px; margin: auto; padding-bottom: 40px; overflow: hidden; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.site_nav .appall .all_categories .catecon li { float: left; width: 380px; height: 140px; padding: 0px 14px; vertical-align: bottom; line-height: 0px; }
+.site_nav .appall .all_categories .catecon li .bigcate { display: block; width: 380px; height: 40px; padding-top: 25px; margin-bottom: 5px; font-size: 20px; border-bottom: 1px solid rgb(227, 227, 227); }
+.site_nav .appall .all_categories .catecon li .bigcate a { font-size: 20px; padding-right: 10px; }
+.site_nav .appall .all_categories .catecon li a { display: inline-block; padding-right: 20px; line-height: 28px; height: 28px; vertical-align: bottom; font-size: 14px; color: rgb(102, 102, 102); word-wrap: break-word; word-break: normal; }
+.site_nav .appall .all_categories .catecon li a:hover { color: rgb(204, 17, 17); }
+.topNav { display: inline-block; margin: 0px 2px 0px 10px; color: rgb(191, 191, 191); font-family: Geneva; }
+.topNav:hover { text-decoration: underline; color: rgb(255, 255, 255); }
+.topNav i { float: left; width: 20px; height: 20px; margin: 11px 6px 0px 0px; vertical-align: middle; }
+.top_line { float: left; display: inline-block; margin: 0px 17px 0px 7px; color: rgb(191, 191, 191); }
+.ico_top1 { display: inline-block; background: transparent url('ico_index.png') no-repeat scroll 0px 0px; }
+.ico_top2 { display: inline-block; background: transparent url('ico_index.png') no-repeat scroll -24px 0px; }
+.ico_top3 { display: inline-block; background: transparent url('ico_index.png') no-repeat scroll -49px 0px; }
+.ico_top4 { display: inline-block; background: transparent url('ico_index.png') no-repeat scroll -74px 0px; vertical-align: middle; margin-right: 6px; }
+.site_header { position: relative; z-index: 2; display: block; height: 100px; width: 100%; background: rgb(255, 255, 255) none repeat scroll 0% 0%; overflow: visible; border-bottom: 1px solid rgb(221, 221, 221); clear: both; float: none; }
+.site_header .wrap { height: 100px; }
+.siteLogo { float: left; overflow: hidden; width: 185px; padding-top: 25px; }
+.navbox { left: 185px; width: 750px; height: 73px; }
+.navContent { padding: 0px 0px 0px 15px; display: inline-block; }
+.nav { position: relative; float: left; max-width: 85px; height: 73px; padding: 0px 10px; }
+.navTxt { display: block; height: 45px; line-height: 45px; font-size: 16px; text-align: center; }
+.subnavBox { display: none; position: absolute; top: 74px; left: 0px; z-index: 10; overflow: hidden; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border-bottom: 1px solid rgb(221, 221, 221); }
+.subnavBox .subNav_goods { width: 1226px; margin: 0px auto; overflow: hidden; }
+a.shakeTxt::before { position: absolute; top: -11px; left: 0px; width: 22px; height: 24px; background: transparent url('about-hot-icon.png') no-repeat scroll 0% 0%; content: ""; }
+.site_search { float: left; margin: 25px 10px 0px 0px; position: relative; z-index: 1; }
+.search_span { position: absolute; top: 15px; right: 50px; height: 20px; }
+.site_search .search_span a { float: left; margin-right: 10px; background-color: rgb(238, 238, 238); padding: 2px 5px; color: rgb(119, 119, 119); }
+.site_search .search_span a:hover { background-color: rgb(204, 0, 0); color: rgb(255, 255, 255); }
+.site_search .search_input { float: left; width: 218px; height: 48px; line-height: 48px; padding: 0px 5px; border: 1px solid rgb(224, 224, 224); }
+.site_search input:focus { outline: medium none; }
+.site_search .search_btn { float: left; display: inline-block; background: transparent url('ico_index.png') no-repeat scroll -144px -64px; width: 51px; height: 50px; }
+.site_search .search_btn:hover { background-color: rgb(204, 0, 0); color: rgb(255, 255, 255); }
+.ico_top5 { width: 9px; height: 5px; padding-top: 1px; display: inline-block; background: transparent url('ico_index.png') no-repeat scroll -101px 0px; }
+.ico_top10 { width: 14px; height: 12px; display: inline-block; margin-right: 5px; padding-top: 2px; background: transparent url('ico_index.png') no-repeat scroll -107px -65px; vertical-align: middle; }
+.dialog_frame { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 1000; display: none; overflow-x: hidden; overflow-y: scroll; }
+.dialog_mask { position: fixed; left: 0px; top: 0px; height: 100%; width: 100%; z-index: -1; background: rgb(0, 0, 0) none repeat scroll 0% 0%; opacity: 0.6; }
+.dialog_box { width: 1000px; margin: 0px auto; overflow-x: hidden; }
+.dialog_header { position: relative; padding: 45px 50px 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.dialog_header::after { visibility: hidden; display: block; font-size: 0px; content: " "; clear: both; height: 0px; }
+.dialog_header .dialog_title { display: block; float: none; height: 40px; line-height: 35px; border-bottom: 1px solid rgb(204, 204, 204); font-size: 30px; color: rgb(128, 128, 128); font-weight: normal; }
+.dialog_close { position: absolute; right: 20px; top: 20px; background: transparent url(" ../img/product/newVersion/ico_detail.png") no-repeat scroll -107px -398px; width: 30px; height: 30px; cursor: pointer; text-indent: -999em; }
+.dialog_close:hover { background-position: -152px -396px; }
+.dialog_body { background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: relative; overflow: auto; width: 100%; }
+.dialog_con { padding: 10px 50px; overflow-x: hidden; }
+.dialog_footer { text-align: center; display: block; padding: 15px 20px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border-top: 1px solid rgb(204, 204, 204); box-shadow: 0px 15px 10px -20px rgb(0, 0, 0) inset; }
+.dialog_footer::after { visibility: hidden; display: block; font-size: 0px; content: " "; clear: both; height: 0px; }
+.tips_frame { position: relative; overflow: hidden; color: rgb(153, 153, 153); }
+.tips_frame .tips_box { position: absolute; }
+.tips_box { opacity: 0; position: fixed; z-index: 1001; width: 100%; text-align: center; bottom: -50px; left: 0px; height: 30px; line-height: 28px; background: rgb(239, 239, 239) none repeat scroll 0% 0%; font-family: "微软雅黑"; font-size: 14px; }
+.tips_box strong { font-size: 14px; line-height: 0; display: inline; font-weight: normal; background: rgb(239, 239, 239) none repeat scroll 0% 0%; padding: 0px 8px; }
+.tips_box .tips_close { opacity: 0; position: absolute; right: -50px; bottom: 0px; color: rgb(255, 255, 255); font-size: 42px; background: rgb(204, 57, 57) none repeat scroll 0% 0%; width: 50px; height: 45px; text-align: center; line-height: 38px; box-shadow: -2px -2px 5px rgb(85, 85, 85); }
+.tips_box .tips_close:hover { background: rgb(187, 57, 57) none repeat scroll 0% 0%; color: rgb(255, 255, 255); }
+.tips_box.error { background: rgb(204, 17, 17) none repeat scroll 0% 0%; color: rgb(255, 255, 255); }
+.tips_box.error p { overflow: hidden; height: 30px; }
+.tips_box.error strong { background: rgb(204, 17, 17) none repeat scroll 0% 0%; color: rgb(255, 255, 255); overflow: hidden; }
+.form_table { width: 100%; font-size: 14px; }
+.form_table th { padding: 8px; font-weight: normal; text-align: right; }
+.form_table td { padding: 8px 8px 8px 0px; }
+.form_table td .itext { float: left; width: 190px; padding: 2px 5px; margin-right: 5px; display: inline; height: 40px; line-height: 40px; border: 1px solid rgb(230, 230, 230); }
+.tab_frame .tab_header { width: 100%; }
+.tab_frame .tab_header .tab_trigger { float: left; }
+.tab_frame .tab_body .tab_item { display: none; }
+.tab_frame .tab_body .tab_item.on { display: block; }
+.abtn { display: inline-block; background: rgb(239, 239, 239) none repeat scroll 0% 0%; padding: 5px 25px; margin-right: 10px; font-size: 14px; font-family: "微软雅黑"; color: rgb(51, 51, 51); }
+.abtn:hover { background: rgb(207, 207, 207) none repeat scroll 0% 0%; color: rgb(51, 51, 51); }
+.abtn.confirm { background: rgb(204, 17, 17) none repeat scroll 0% 0%; color: rgb(255, 255, 255); }
+.abtn.confirm:hover { background: rgb(255, 20, 20) none repeat scroll 0% 0%; color: rgb(255, 255, 255); }
+.pass_box .dialog_body {  }
+.pass_box .tab_trigger { width: 50%; height: 50px; line-height: 50px; text-align: center; background: rgb(83, 83, 83) none repeat scroll 0% 0%; font-size: 20px; position: relative; }
+.pass_box .tab_trigger i { display: none; position: absolute; left: 140px; bottom: -20px; width: 0px; height: 0px; border-top: 20px solid rgb(204, 17, 17); border-left: 20px solid transparent; border-right: 20px solid transparent; }
+.pass_box .tab_trigger.on { background: rgb(204, 17, 17) none repeat scroll 0% 0%; }
+.pass_box .tab_trigger.on i { display: block; }
+.pass_box .tab_trigger a { display: block; color: rgb(255, 255, 255); }
+.pass_box .tab_trigger a:hover { color: rgb(255, 255, 255); }
+.pass_box .tab_body .tab_item { padding: 30px 0px 50px; }
+.pass_box .form_table .itext { width: 278px; height: 18px; line-height: 18px; padding: 10px; border: 1px solid rgb(204, 204, 204); }
+.pass_box .form_table p { padding-top: 10px; }
+.pass_box .form_table p a { color: rgb(17, 145, 226); }
+.pass_box .form_table p a:hover { color: rgb(255, 102, 0); text-decoration: underline; }
+.pass_box .submit .abtn { width: 260px; margin: 10px 0px 0px; background: rgb(204, 17, 17) none repeat scroll 0% 0%; border-radius: 4px; box-shadow: 1px 1px 3px rgb(204, 204, 204); height: 30px; line-height: 30px; font-size: 20px; text-align: center; }
+.pass_box .submit .abtn:hover { background: rgb(204, 57, 57) none repeat scroll 0% 0%; }
+.pass_box .submit .zc { margin-left: 13px; }
+.site_nav { float: left; width: 733px; height: 45px; margin-top: 27px; display: inline-block; }
+a:focus { outline: medium none; }
+.subNav_goods { height: 100%; overflow: hidden; }
+.subNav_goods .goods_list { background: transparent url('fenjie.png') no-repeat scroll center center; overflow: hidden; }
+.subNav_goods .goods_list li { float: left; overflow: hidden; height: 100%; }
+.subNav_goods .goods_list .gitem { display: block; }
+.subNav_goods .goods_list .gimg { display: inline-block; }
+.subNav_goods .goods_list p { line-height: 20px; height: 20px; overflow: hidden; font-size: 16px; }
+.subNav_goods .goods_list .gname { font-size: 16px; }
+.subNav_goods .goods_list .gdesc { color: rgb(109, 109, 109); }
+.subNav_goods .goods_list .gprice { color: rgb(204, 17, 17); }
+.subNav_goods .goods_list .gprice var { font-size: 24px; }
+.subNav_goods .goods_list .abtn { margin: 8px 0px 5px; font-size: 16px; }
+.subNav_goods.two .goods_list li { width: 50%; }
+.subNav_goods.two .goods_list .gitem { padding: 5px 30px; }
+.subNav_goods.two .goods_list .gimg { float: left; width: 240px; height: 240px; margin-right: 30px; display: inline; }
+.subNav_goods.two .goods_list .gname { margin-top: 35px; }
+.subNav_goods.two .goods_list .gprice { margin-top: 8px; }
+.subNav_goods.two .goods_list .gbuy { padding: 8px 20px; background: rgb(236, 17, 17) none repeat scroll 0% 0%; }
+.subNav_goods.two .goods_list .gbuy:hover { background: rgb(255, 18, 18) none repeat scroll 0% 0%; }
+.subNav_goods.two .goods_list li a { text-decoration: none; }
+.site_footer { width: 100%; min-width: 1226px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.site_footer .site_about { line-height: 20px; padding: 50px 0px; font-family: "宋体"; background: rgb(243, 243, 243) url('footer-bg.png') no-repeat scroll center center; }
+.site_footer .site_about .about_left { float: left; margin-left: 92px; display: inline; }
+.site_footer .site_about .about_right { float: right; width: 500px; margin-right: 70px; display: inline; }
+.modify { width: 1000px; margin: auto; padding-top: 20px; height: 186px; }
+.modify li { padding-left: 27px; width: 172px; height: 165px; border-right: 1px solid rgb(230, 230, 230); float: left; }
+.modify li dl dt { font-size: 18px; color: rgb(51, 51, 51); margin-bottom: 3px; }
+.modify li dl dd { font-size: 14px; color: rgb(102, 102, 102); }
+.modify li dl dd a { margin-right: 4px; color: rgb(102, 102, 102); }
+.modify li dl { padding-bottom: 20px; }
+.modify li dl dd a:hover { color: rgb(204, 17, 17); }
+.modify li dl dd p { line-height: 20px; margin-top: 5px; }
+.modify_ico { width: 75px; height: 26px; border: 1px solid rgb(207, 207, 207); margin-bottom: 4px; }
+.modify_copy { color: rgb(51, 51, 51); font-size: 12px; line-height: 0; }
+.modify li dl dd .modify_pic img { margin-bottom: 4px; }
+.modify li dl dd p a { color: rgb(0, 0, 0); line-height: 0px; height: 0px; }
+.modify .modify_lh dl dd a { color: rgb(102, 102, 102); line-height: 28px; }
+.wechat_box { padding: 120px 30px; }
+.wechat_box img { float: left; }
+.wechat_box ul { float: right; padding-top: 25px; }
+.wechat_box ul li { line-height: 30px; font-size: 14px; color: rgb(112, 112, 112); }
+.aboutUs_box { padding: 5px 20px 20px; }
+.aboutUs_box h4 { background: rgb(245, 245, 245) none repeat scroll 0% 0%; padding-bottom: 5px; margin: 25px 0px 8px 15px; font-size: 16px; width: 140px; height: 16px; line-height: 0; text-indent: 10px; font-weight: normal; }
+.aboutUs_box h4 i { float: left; margin-left: -16px; border-top: 21px solid transparent; border-right: 16px solid rgb(245, 245, 245); }
+.aboutUs_box h4 b { float: right; margin-right: -16px; border-bottom: 22px solid transparent; border-left: 16px solid rgb(245, 245, 245); }
+.aboutUs_box p { text-indent: 2em; line-height: 24px; font-size: 14px; }
+.copyright_box { line-height: 22px; font-size: 14px; }
+.copyright_box p { text-indent: 2em; }
+.copyright_box small { color: rgb(204, 17, 17); margin: 0px 2px; }
+.form_submit { width: 260px; margin: 10px 187px 0px; background: rgb(204, 17, 17) none repeat scroll 0% 0%; border-radius: 4px; box-shadow: 1px 1px 3px rgb(204, 204, 204); height: 40px; line-height: 40px; font-size: 20px; text-align: center; }
+.LoginCheck .CheckSubmit { width: 300px; height: 40px; margin: 10px 0px 0px 187px; background: rgb(204, 17, 17) none repeat scroll 0% 0%; border: 0px none; border-radius: 4px; box-shadow: 1px 1px 3px rgb(204, 204, 204); line-height: 30px; color: rgb(255, 255, 255); font-size: 20px; text-align: center; cursor: pointer; }
+.i-country, .tata, .sQun { float: left; height: 16px; width: 25px; margin: 6px 5px 0px 0px; background: transparent url('ico-country.png') no-repeat scroll 0px 0px; }
+.Malaysia { background-position: 0px -32px; }
+.America { background-position: 0px -128px; }
+.Polska { background-position: 0px -320px; }
+.tata, .sQun, .f_attention, .authority { background: transparent url('footer_ico.png') no-repeat scroll 0px 0px; }
+.tata { background-position: -4px -173px; }
+.block { display: block; }
+.f_attention { float: left; width: 68px; height: 17px; overflow: hidden; }
+.modify li dl dd a.f_attention { margin: 5px 25px 8px 0px; }
+.f_wb { background-position: 0px -30px; }
+.f_facebook { background-position: 0px -57px; }
+.f_twitter { background-position: 0px -86px; }
+.f_youtube { background-position: 0px -113px; }
+.category_goods .goods_list li.main_item::before { content: ""; display: inline-block; height: 100%; vertical-align: middle; }
+.record { width: 220px; display: block; margin-top: 15px; }
+.modify_box { width: 800px; }
+/* ::::: https://login.skg.com/styles/storefront/css/nav.css?v=15081401 ::::: */
+
+/* ::::: https://login.skg.com/styles/storefront/css/login.css ::::: */
+
+.other_account { width: 378px; margin: 28px auto 0px; border-top: 1px dotted rgb(204, 204, 204); }
+.other_account dt { height: 20px; padding: 21px 0px; line-height: 21px; color: rgb(153, 153, 153); }
+.other_account dd a { float: left; height: 25px; padding-left: 35px; background-repeat: no-repeat; background-position: left center; line-height: 25px; }
+.other_account dd a.qq_login { margin-right: 55px; background-image: url('icon_qq.jpg'); }
+.other_account dd a.wx_login { margin-right: 47px; background-image: url('icon_wx.jpg'); }
+.other_account dd a.wb_login { background-image: url('icon_wb.jpg'); }
+.blue_mailx { width: 521px; height: 40px; float: left; position: absolute; top: 0px; left: 0px; padding-left: 5px; }
+.blue_mailx input { margin-right: 4px; }
+.form_table td.ad { padding: 0px; }
+.red_Phonex { width: 521px; height: 40px; float: left; position: absolute; top: 0px; left: 0px; }
+.red_Phonex input { margin-left: 4px; }
+.red_Phonex { left: 600px; }
+.blue_mailx a { color: rgb(15, 137, 240); }
+.blue_mailx a:hover { color: rgb(217, 9, 9); }
+.red_Phonex a { color: rgb(217, 9, 9); text-decoration: underline; }
+.red_Phonex a:hover { color: rgb(15, 137, 240); text-decoration: none; }
+.LoginCheck .tab_item.on { height: 360px; }
+.td_pr { position: relative; }
+.togglePassword { display: block; position: absolute; top: 21px; right: 160px; width: 19px; height: 16px; background: transparent url('icon_see_pwd.png') no-repeat scroll 0% 0%; cursor: pointer; }
+/* ::::: https://login.skg.com/styles/storefront/css/login.css ::::: */
+
+.other_account { width: 378px; margin: 28px auto 0px; border-top: 1px dotted rgb(204, 204, 204); }
+.other_account dt { height: 20px; padding: 21px 0px; line-height: 21px; color: rgb(153, 153, 153); }
+.other_account dd a { float: left; height: 25px; padding-left: 35px; background-repeat: no-repeat; background-position: left center; line-height: 25px; }
+.other_account dd a.qq_login { margin-right: 55px; background-image: url('icon_qq.jpg'); }
+.other_account dd a.wx_login { margin-right: 47px; background-image: url('icon_wx.jpg'); }
+.other_account dd a.wb_login { background-image: url('icon_wb.jpg'); }
+.blue_mailx { width: 521px; height: 40px; float: left; position: absolute; top: 0px; left: 0px; padding-left: 5px; }
+.blue_mailx input { margin-right: 4px; }
+.form_table td.ad { padding: 0px; }
+.red_Phonex { width: 521px; height: 40px; float: left; position: absolute; top: 0px; left: 0px; }
+.red_Phonex input { margin-left: 4px; }
+.red_Phonex { left: 600px; }
+.blue_mailx a { color: rgb(15, 137, 240); }
+.blue_mailx a:hover { color: rgb(217, 9, 9); }
+.red_Phonex a { color: rgb(217, 9, 9); text-decoration: underline; }
+.red_Phonex a:hover { color: rgb(15, 137, 240); text-decoration: none; }
+.LoginCheck .tab_item.on { height: 360px; }
+.td_pr { position: relative; }
+.togglePassword { display: block; position: absolute; top: 21px; right: 160px; width: 19px; height: 16px; background: transparent url('icon_see_pwd.png') no-repeat scroll 0% 0%; cursor: pointer; }
+.moveTitle { float: left; line-height: 40px; width: 131px; padding-right: 8px; text-align: right; }
+.typeChage { float: left; line-height: 40px; height: 40px; margin-left: 3px; }

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta property="qc:admins" content="244164165001663376375">
+<meta http-equiv="Cache-Control" content="max-age=600">
+<meta name="baidu-site-verification" content="hb1SlDOkrk">
+<meta name="360-site-verification" content="0b2309c3295a661627cb23917a056493">
+<meta name="sogou_site_verification" content="p9Xp3iLDAl">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta charset="UTF-8">
+
+<script src="jquery-1.11.2.js"></script>
+<script src="jquery.cookie.js"></script>
+<script src="verifydata.js"></script>
+<!--[if lte IE 7]>
+<script src="http://www.skg.com/scripts/storefront/json2.js"></script>
+<![endif]-->
+
+<script>
+	var logUrl ='http://113.105.8.3:20158/log-server/logStat2.do';
+	var __ctxPath = "http://d.skg.com";
+	var CtxPath = "http://www.skg.com"
+	var DynPath = "http://d.skg.com";
+	var baseUrl = DynPath + "/storefront/member";
+	var domainStr = '.skg.com';
+	var __httpsPath = "https://login.skg.com";
+	var baseHttpsUrl =  "https://login.skg.com/storefront/member";
+</script>
+</head>
+<body>
+	<script type="text/javascript" src="common.js"></script>
+	<script>
+
+	$(function(){
+		setInterval(function(){
+			var logoutInfo = $.cookie("logoutEvent");
+			if(logoutInfo!=null&&logoutInfo=="yes"){
+				 $.cookie("logoutEvent",null, {path:'/'  ,domain:domainStr  });
+				 $.cookie('submigLogin', null, {path:'/'  ,domain:domainStr  });
+				logout();
+			}
+			
+			var str = $.cookie('checkLoginAfterRegister');
+			
+			if(str=="true"&&str!=null){
+				$.cookie('checkLoginAfterRegister', null, {path:'/'  ,domain:domainStr  });
+				checkLogin();
+				
+			}
+			var CertificateViewCheck = $.cookie('CertificateViewCheck');
+			
+			if(CertificateViewCheck=="true"&&CertificateViewCheck!=null){
+				$.cookie('CertificateViewCheck', null, {path:'/'  ,domain:domainStr  });
+				checkCertificateView();				
+			}
+			var login = $.cookie('submigLogin');
+			if(login!=null){
+				$.cookie('submigLogin', null, {path:'/'  ,domain:domainStr  });
+				var url = baseUrl + "/login.html";
+				var flag = false
+				if(flag)return;
+				flag=true;
+				var data = JSON.parse(login);
+				var newData = {
+						'loginName' : data.loginName,
+						'password' : data.password,
+						'source' : data.source,
+						'callType' : data.callType,
+						'directCartId' : data.directCartId,
+						'isReMe':data.isReMe,
+						'verifyLogin':data.verifyLogin
+				}
+				$.ajax({
+					type : 'POST',
+					url : url,
+					dataType:'json',
+					data :newData,
+					success : function(data){
+						flag=false;
+						$.cookie('submigLoginResult', JSON.stringify(data), {path:'/'  ,domain:domainStr  });					
+					},
+					error : function(res){
+						flag=false;
+						$.cookie('submigLoginResult', "error", {path:'/'  ,domain:domainStr  });	
+					}
+				});
+			}
+			var getCode = $.cookie('getCode');
+			if(getCode!=null){
+				 $.cookie('getCode',null,{path:'/',domain:domainStr});
+				var data = JSON.parse(getCode);
+				sendValidCode(data.mobile,data.flag);
+			}
+			var mobildRegister = $.cookie('mobileRegister');	
+			if(mobildRegister!=null){
+				 $.cookie('mobileRegister',null,{path:'/',domain:domainStr});
+				var data = JSON.parse(mobildRegister);
+				mobileReg(data);
+			}
+			var mailRegister = $.cookie("mailRegister");
+			if(mailRegister!=null){
+				 $.cookie('mailRegister',null,{path:'/',domain:domainStr});
+				 var data = JSON.parse(mailRegister);
+				mailReg(data);
+			}
+		},200);
+		
+		
+		
+	})
+	checkLogin();
+	QQList();
+
+	
+		
+	
+/*时间初始化-Star  */	
+
+
+/*检查是否登陆 -Star  */	
+function checkLogin(){
+	var url = baseUrl + "/checkLogin.html";
+	$.ajax({
+        url: url,
+        cache: false,
+        type: "get",
+        contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+        success: function (data) {
+        	try{
+        	
+        		var res = $.parseJSON(data);
+        		if(res.statusCode=="200"){
+            		var obj = {};
+            		obj.statusCode = res.statusCode;
+            		obj.memberView={};
+            		obj.memberView.partyName = res.memberView.partyName;
+            		obj.memberView.meEntityView = {};
+            		obj.memberView.meEntityView.pointUsable = res.memberView.meEntityView.pointUsable;
+            		obj.cartNumber = res.cartNumber;
+            		
+            		$.cookie('checkLogin', JSON.stringify(obj), {path:'/',domain:domainStr});
+            		//checkCertificateView();
+        		}else{
+        			$.cookie('checkLogin', null, {path:'/',domain:domainStr});
+            		var skgMember= $.cookie('skgMember');
+            		if(skgMember){
+            			skgMemberLogin(skgMember);
+            		}
+        		}
+        	}catch(e){
+        		
+        	}
+        },
+        error: function (data) {
+        }
+    });
+}
+/*检查是否Login -End  */
+/*注销 -Star  */
+function logout(){
+	var url = baseUrl + "/logout.html";
+	$.ajax({
+		type : 'POST',
+		url : url,
+		success : function(data){
+			try{
+				var res = $.parseJSON(data);
+				if(res.statusCode == "200" || res.statusCode == "201" || res.statusCode == "505"){
+					$.cookie('cartNumberCookie', null, {path:'/',domain:domainStr});
+					$.cookie('CART', null, {path:'/'});
+					$.cookie('skgMember', null, {path:'/'  ,domain:domainStr  });
+					$.cookie("logout","yes",{path:'/'  ,domain:domainStr  });
+					//window.parent.location.href = __ctxPath;
+					//window.parent.document.location.reload();
+					
+				}else{
+					alert(res.msg);
+				}
+			}catch(e){
+				$.cookie('cartNumberCookie', null, {path:'/',domain:domainStr});
+				$.cookie('CART', null, {path:'/'});
+				$.cookie('skgMember', null, {path:'/'  ,domain:domainStr  });
+				$.cookie("logout","yes",{path:'/'  ,domain:domainStr  });
+				//window.parent.document.location.reload();
+				//document.location.href = __ctxPath;
+			}
+		},
+		error : function(res){
+			$.cookie('cartNumberCookie', null, {path:'/',domain:domainStr});
+			$.cookie('CART', null, {path:'/'});
+			$.cookie('skgMember', null, {path:'/'  ,domain:domainStr  });
+			$.cookie("logout","no",{path:'/'  ,domain:domainStr  });
+			//window.parent.location.href = __ctxPath;
+			//window.parent.location.reload();
+		}
+	});
+	
+}
+/*注销 -End  */
+
+function checkCertificateView(){
+	var url = baseHttpsUrl + "/checkCertificateView.html";
+	$.ajax({
+        url: url,
+        cache: false,
+        type: "get",
+        contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+        success: function (data) {
+        		obj = $.parseJSON(data);
+        		$.cookie('CertificateViewFlag', JSON.stringify(obj), {path:'/',domain:domainStr});
+        		//window.parent.postMessage(JSON.stringify(data),'*');
+
+        },
+        error: function (data) {
+        	//alert(obj.msg);
+        }
+    });
+}
+function skgMemberLogin(skgMember){
+	var url = baseUrl + "/cookieLogin.html";
+	$.ajax({
+        url: url,
+        type : 'POST',
+		dataType:'json',
+		data : {
+			memberCooike:skgMember
+		},
+        success: function (data) {
+        	try{
+        		var tt = JSON.stringify(data);
+        		obj = $.parseJSON(tt);
+        		if(obj.statusCode == "200"){
+        			location.reload(false);
+            	}
+        	}catch(e){
+        	}
+        }
+    });
+}
+
+//base64加密开始
+var keyStr = "ABCDEFGHIJKLMNOP" + "QRSTUVWXYZabcdef" + "ghijklmnopqrstuv"
+                + "wxyz0123456789+/" + "=";
+function encode64(input) {
+
+    var output = "";
+    var chr1, chr2, chr3 = "";
+    var enc1, enc2, enc3, enc4 = "";
+    var i = 0;
+    do {
+            chr1 = input.charCodeAt(i++);
+            chr2 = input.charCodeAt(i++);
+            chr3 = input.charCodeAt(i++);
+            enc1 = chr1 >> 2;
+            enc2 = ((chr1 & 3) << 4) | (chr2 >> 4);
+            enc3 = ((chr2 & 15) << 2) | (chr3 >> 6);
+            enc4 = chr3 & 63;
+            if (isNaN(chr2)) {
+                    enc3 = enc4 = 64;
+            } else if (isNaN(chr3)) {
+                    enc4 = 64;
+            }
+            output = output + keyStr.charAt(enc1) + keyStr.charAt(enc2)
+                            + keyStr.charAt(enc3) + keyStr.charAt(enc4);
+            chr1 = chr2 = chr3 = "";
+            enc1 = enc2 = enc3 = enc4 = "";
+    } while (i < input.length);
+
+    return output;
+}
+
+
+//获取验证码
+function sendValidCode(mobile, flag){
+	var result = true;
+	var url = baseUrl + "/getValidCode.html";
+	$.ajax({
+		type : 'POST',
+		async : false,
+		url : url,
+		dataType:'json',
+		data : {
+			'mobile' : encode64(mobile),
+			'flag' : flag
+		},
+		success : function(data){
+			var res = data;
+			if(res.statusCode == "200"){
+				$.cookie('getCodeReuslt', result, {path:'/'  ,domain:domainStr  });
+			}else{
+				alert(res.msg);
+				result = false;
+				$.cookie('getCodeReuslt', result, {path:'/'  ,domain:domainStr  });
+			}
+		},
+		error : function(res){
+			alert("验证码获取失败");
+			result = false;
+			$.cookie('getCodeReuslt', result, {path:'/'  ,domain:domainStr  });
+		}
+	});
+	//return result;
+}
+
+function mobileReg(data){
+	var url = baseUrl+"/registerByMobile.html";
+	$.ajax({
+		type : 'POST',
+		url : url,
+		dataType:'json',
+		data :data,
+		success : function(data){
+			data.flag="success"
+			$.cookie('mobileRegReuslt', JSON.stringify(data), {path:'/'  ,domain:domainStr  });
+		},
+		error : function(res){
+			res.flag="error"
+			$.cookie('mobileRegReuslt', JSON.stringify(res), {path:'/'  ,domain:domainStr  });
+		}
+	});
+}
+function mailReg(data){
+	
+	var url = baseUrl+"/registerByEmail.html";
+	$.ajax({
+		type : 'POST',
+		url : url,
+		dataType:'json',
+		data :data,
+		success : function(data){
+			data.flag="success"
+			$.cookie('mailRegReuslt', JSON.stringify(data), {path:'/'  ,domain:domainStr  });
+		},
+		error : function(res){
+			res.flag="error"
+			$.cookie('mailRegReuslt', JSON.stringify(res), {path:'/'  ,domain:domainStr  });
+		}
+	});
+}
+
+//获取QQ客服列表
+function QQList(){
+	var url =DynPath+"/glConfigs/QQChatConfig.html?callType=web";
+	$.ajax({
+		url : url,
+		success : function(data){
+			var data = JSON.parse(data);
+			if(data.statusCode=="200"){
+				var glConfigView = data.glConfigView;
+				$.cookie('QQList', glConfigView.value, {path:'/'  ,domain:domainStr});
+			}
+		},
+		error : function(res){
+			
+		}
+	});
+}
+
+</script>
+
+</body>
+</html>

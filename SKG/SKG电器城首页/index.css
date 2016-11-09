@@ -1,0 +1,256 @@
+/* ::::: http://www.skg.com/styles/storefront/css/common.css?v=15122519 ::::: */
+
+body, h1, h2, h3, h4, h5, h6, hr, p, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, table, th, td { margin: 0px; padding: 0px; }
+h3, h4, h5, h6 { font-weight: normal; }
+cite, em, var { font-style: normal; }
+ul { list-style: outside none none; }
+body, input, textarea, select, button { font-family: "微软雅黑"; color: rgb(51, 51, 51); font-size: 12px; text-rendering: optimizelegibility; font-feature-settings: "liga", "kern"; }
+img { border: 0px none; }
+button, input, select, textarea { font-size: 100%; }
+body { background-image: url('undefined'); background-attachment: fixed; }
+.clearfix::after { visibility: hidden; display: block; font-size: 0px; content: " "; clear: both; height: 0px; }
+.clearfix {  }
+.clearperfect { clear: both; height: 0px; overflow: hidden; }
+.y_blank05 { width: 100%; height: 5px; font-size: 0px; overflow: hidden; }
+.y_blank12 { width: 100%; height: 12px; font-size: 0px; overflow: hidden; }
+.w { width: 1000px; margin: 0px auto; }
+.fl { float: left; display: inline; }
+.fr { float: right; display: inline; }
+.clearfix::after { visibility: hidden; display: block; font-size: 0px; content: " "; clear: both; height: 0px; }
+.clearfix {  }
+.clearperfect { clear: both; height: 0px; overflow: hidden; }
+a { color: rgb(51, 51, 51); text-decoration: none; }
+a:hover { color: rgb(204, 17, 17); text-decoration: none; }
+.w { width: 1000px; margin: 0px auto; }
+.wrap { width: 1226px; margin: 0px auto; }
+.site_top { background: rgb(50, 50, 50) none repeat scroll 0% 0%; height: 40px; line-height: 40px; width: 100%; min-width: 1226px; }
+.site_top div.label { margin-right: 0px; }
+.site_top .label { float: left; margin-right: 12px; display: inline; color: rgb(191, 191, 191); }
+.site_top .label a { color: rgb(191, 191, 191); }
+.site_top .label a:hover { color: rgb(255, 255, 255); text-decoration: underline; }
+.site_top .login .label a:hover { color: rgb(255, 255, 255); text-decoration: underline; }
+.site_top .member { position: relative; }
+.site_top .member .account { float: left; width: 70px; height: 20px; line-height: 20px; padding-left: 10px; margin-top: 10px; }
+.site_top .member .account_list { display: none; position: absolute; z-index: 22; top: 30px; left: 0px; width: 80px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; padding-bottom: 5px; box-shadow: 0px 4px 4px rgb(213, 213, 213); }
+.site_top .member .account_list a { display: block; height: 24px; line-height: 24px; color: rgb(51, 51, 51); padding-left: 8px; }
+.site_top .member .account_list a:hover { color: rgb(204, 17, 17); text-decoration: underline; }
+.site_top .app { position: relative; }
+.site_top .app .app_link { float: left; width: 70px; height: 20px; line-height: 20px; padding-left: 10px; margin-top: 10px; }
+.site_top .app .app_code { display: none; position: absolute; z-index: 22; top: 30px; margin-right: -27px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; padding: 5px; box-shadow: 0px 4px 4px rgb(213, 213, 213); }
+.site_top .app .app_code img { display: block; }
+.site_top .app .i-m { width: 0px; height: 0px; display: inline-block; border-style: solid; border-color: rgb(191, 191, 191); border-width: 2px 1px 3px; line-height: 0; padding: 7px 6px 0px 0px; position: relative; right: 3px; top: 2px; }
+.site_top .app .i-m i { width: 2px; height: 1px; display: block; background-color: rgb(43, 43, 43); position: absolute; left: 2px; bottom: -2px; }
+.site_nav .appall {  }
+.site_nav .appall .all_categories { display: none; position: absolute; width: 100%; z-index: 2222; left: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; box-shadow: 0px 4px 4px rgb(213, 213, 213); }
+.site_nav .appall .all_categories .catecon { width: 1226px; margin: auto; padding-bottom: 40px; overflow: hidden; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.site_nav .appall .all_categories .catecon li { float: left; width: 380px; height: 140px; padding: 0px 14px; vertical-align: bottom; line-height: 0px; }
+.site_nav .appall .all_categories .catecon li .bigcate { display: block; width: 380px; height: 40px; padding-top: 25px; margin-bottom: 5px; font-size: 20px; border-bottom: 1px solid rgb(227, 227, 227); }
+.site_nav .appall .all_categories .catecon li .bigcate a { font-size: 20px; padding-right: 10px; }
+.site_nav .appall .all_categories .catecon li a { display: inline-block; padding-right: 20px; line-height: 28px; height: 28px; vertical-align: bottom; font-size: 14px; color: rgb(102, 102, 102); word-wrap: break-word; word-break: normal; }
+.site_nav .appall .all_categories .catecon li a:hover { color: rgb(204, 17, 17); }
+.topNav { display: inline-block; margin: 0px 2px 0px 10px; color: rgb(191, 191, 191); font-family: Geneva; }
+.topNav:hover { text-decoration: underline; color: rgb(255, 255, 255); }
+.topNav i { float: left; width: 20px; height: 20px; margin: 11px 6px 0px 0px; vertical-align: middle; }
+.top_line { float: left; display: inline-block; margin: 0px 17px 0px 7px; color: rgb(191, 191, 191); }
+
+
+.ico_top1 { display: inline-block; background: transparent url('ico_index.png') no-repeat scroll 0px 0px; }
+.ico_top2 { display: inline-block; background: transparent url('ico_index.png') no-repeat scroll -24px 0px; }
+.ico_top3 { display: inline-block; background: transparent url('ico_index.png') no-repeat scroll -49px 0px; }
+.ico_top4 { display: inline-block; background: transparent url('ico_index.png') no-repeat scroll -74px 0px; vertical-align: middle; margin-right: 6px; }
+.site_header { position: relative; z-index: 2; display: block; height: 100px; width: 100%; background: rgb(255, 255, 255) none repeat scroll 0% 0%; overflow: visible; border-bottom: 1px solid rgb(221, 221, 221); clear: both; float: none; }
+.site_header .wrap { height: 100px; }
+.siteLogo { float: left; overflow: hidden; width: 185px; padding-top: 25px; }
+.navbox { left: 185px; width: 750px; height: 73px; }
+.navContent { padding: 0px 0px 0px 15px; display: inline-block; }
+.nav { position: relative; float: left; max-width: 85px; height: 73px; padding: 0px 10px; }
+.navTxt { display: block; height: 45px; line-height: 45px; font-size: 16px; text-align: center; }
+.subnavBox { display: none; position: absolute; top: 74px; left: 0px; z-index: 10; overflow: hidden; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border-bottom: 1px solid rgb(221, 221, 221); }
+.subnavBox .subNav_goods { width: 1226px; margin: 0px auto; overflow: hidden; }
+a.shakeTxt::before { position: absolute; top: -11px; left: 0px; width: 22px; height: 24px; background: transparent url('about-hot-icon.png') no-repeat scroll 0% 0%; content: ""; }
+.site_search { float: left; margin: 25px 10px 0px 0px; position: relative; z-index: 1; }
+.search_span { position: absolute; top: 15px; right: 50px; height: 20px; }
+.site_search .search_span a { float: left; margin-right: 10px; background-color: rgb(238, 238, 238); padding: 2px 5px; color: rgb(119, 119, 119); }
+.site_search .search_span a:hover { background-color: rgb(204, 0, 0); color: rgb(255, 255, 255); }
+.site_search .search_input { float: left; width: 218px; height: 48px; line-height: 48px; padding: 0px 5px; border: 1px solid rgb(224, 224, 224); }
+.site_search input:focus { outline: medium none; }
+.site_search .search_btn { float: left; display: inline-block; background: transparent url('ico_index.png') no-repeat scroll -144px -64px; width: 51px; height: 50px; }
+.site_search .search_btn:hover { background-color: rgb(204, 0, 0); color: rgb(255, 255, 255); }
+.foot_links { position: relative; width: 1176px; padding: 0px 20px 0px 70px; margin: 0px auto; height: 60px; line-height: 60px; text-align: left; color: rgb(128, 128, 128); overflow: hidden; }
+.foot_links p { position: absolute; left: 0px; margin-right: 10px; }
+.foot_links a { float: left; margin: 0px 16px; font-size: 12px; color: rgb(128, 128, 128); }
+.foot_links a:hover { color: rgb(204, 17, 17); text-decoration: underline; }
+.foot_links .viewNext { position: absolute; right: 0px; top: 17px; width: 20px; height: 20px; background: transparent url('ico_index.png') no-repeat scroll -280px -60px; cursor: pointer; }
+.main { width: 100%; min-width: 1226px; }
+.custom { width: 100%; margin-bottom: 15px; padding-top: 15px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.custom .con { width: 1226px; margin: auto; background: rgb(238, 238, 238) none repeat scroll 0% 0%; height: 34px; overflow: hidden; position: relative; }
+.custom .con h1 { font-size: 12px; font-weight: 400; }
+.ads_pictures { display: inline-block; width: 100%; margin-top: 15px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; padding-bottom: 30px; }
+.ads_pictures ul { width: 1240px; margin-left: -14px; }
+.ads_pictures li { width: 296px; height: 171px; float: left; margin-left: 14px; overflow: hidden; }
+.ads_pictures li a:hover img { opacity: 0.9; }
+.strar_protuct { display: inline-block; width: 100%; background: rgb(255, 255, 255) none repeat scroll 0% 0%; padding-bottom: 30px; }
+.strar_protuct .title { width: 1226px; height: 60px; line-height: 60px; }
+.strar_protuct .title h2 { font-size: 22px; }
+.strar_protuct img {  }
+.strar_protuct .wrap { position: relative; }
+.strar_protuct dl { width: 12400px; margin-left: -14px; overflow: hidden; position: relative; }
+.strar_protuct dd { float: left; width: 234px; height: 311px; padding-top: 28px; margin-left: 14px; background: rgb(250, 250, 250) none repeat scroll 0% 0%; text-align: center; line-height: 30px; }
+.strar_protuct .bordertop0, .strar_protuct .bordertop5 { border-top: 1px solid rgb(255, 171, 20); }
+.strar_protuct .bordertop1, .strar_protuct .bordertop6 { border-top: 1px solid rgb(131, 196, 78); }
+.strar_protuct .bordertop2, .strar_protuct .bordertop7 { border-top: 1px solid rgb(33, 150, 243); }
+.strar_protuct .bordertop3, .strar_protuct .bordertop8 { border-top: 1px solid rgb(229, 57, 53); }
+.strar_protuct .bordertop4, .strar_protuct .bordertop9 { border-top: 1px solid rgb(0, 193, 166); }
+.strar_protuct dd .line1 a { width: 220px; padding: 0px 7px; display: block; height: 24px; line-height: 30px; font-size: 14px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+.strar_protuct dd .line2 a { width: 220px; padding: 0px 7px; display: block; height: 24px; line-height: 30px; font-size: 12px; font-family: Geneva; color: rgb(153, 153, 153); text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+.strar_protuct dd .line3 { width: 220px; padding: 0px 7px; height: 24px; line-height: 30px; font-size: 14px; color: rgb(255, 0, 0); font-weight: bold; }
+.strar_protuct dd .star_pic { display: block; width: 234px; height: 188px; overflow: hidden; margin-bottom: 15px; }
+.strar_protuct .gun_left, .strar_protuct .gun_right { position: absolute; text-align: center; top: 0px; width: 24px; height: 16px; padding: 3px 5px; border: 1px solid rgb(224, 224, 224); font-size: 16px; color: rgb(238, 238, 238); line-height: 16px; cursor: pointer; }
+.strar_protuct .gun_left.on, .strar_protuct .gun_right.on { color: rgb(204, 204, 204); cursor: default; }
+.strar_protuct .gun_left:hover, .strar_protuct .gun_right:hover { color: rgb(204, 17, 17); }
+.strar_protuct .gun_left { background-size: 100% auto; right: 35px; }
+.strar_protuct .gun_right { background-size: 100% auto; right: 0px; }
+.gunwrap { width: 100%; overflow: hidden; position: relative; }
+.main_cate { width: 100%; background: rgb(248, 248, 248) none repeat scroll 0% 0%; padding-bottom: 30px; min-width: 1226px; }
+.categories { width: 1226px; margin: auto; }
+.sy_video { width: 1226px; margin: auto; }
+.sy_video .title { width: 1226px; height: 55px; line-height: 55px; }
+.sy_video .title h3 { float: left; display: inline-block; margin-right: 5px; font-weight: normal; font-size: 22px; }
+.sy_video .title .con { display: inline-block; float: left; text-align: left; font-size: 18px; }
+.sy_video ul { display: inline-block; width: 1240px; margin-left: -14px; }
+.sy_video li { position: relative; float: left; width: 296px; height: 285px; margin-left: 14px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; text-align: center; }
+.sy_video li span.writing { position: absolute; top: 0px; left: 0px; z-index: 222; width: 296px; height: 180px; font-family: Georgia; font-size: 12px; color: rgb(255, 255, 255); }
+.sy_video li span.writing a { display: block; width: 296px; height: 180px; background: transparent url('video01.png') repeat scroll 0% 0%; }
+.sy_video li span.writing a:hover { background: transparent url('video02.png') repeat scroll 0% 0%; }
+.sy_video li .txt { display: block; position: relative; width: 272px; padding: 30px 12px 0px; color: rgb(255, 255, 255); text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+.sy_video li .txt a { color: rgb(51, 51, 51); font-size: 14px; }
+.sy_video li .txt a:hover { color: rgb(204, 17, 17); text-decoration: underline; }
+.sy_video li .txt { line-height: 25px; color: rgb(193, 193, 217); }
+.sy_video_pic { width: 296px; height: 180px; }
+.sy_video_pic img { width: 296px; height: 180px; }
+.ico_top5 { width: 9px; height: 5px; padding-top: 1px; display: inline-block; background: transparent url('ico_index.png') no-repeat scroll -101px 0px; }
+.ico_top10 { width: 14px; height: 12px; display: inline-block; margin-right: 5px; padding-top: 2px; background: transparent url('ico_index.png') no-repeat scroll -107px -65px; vertical-align: middle; }
+.dialog_frame { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 1000; display: none; overflow-x: hidden; overflow-y: scroll; }
+.dialog_mask { position: fixed; left: 0px; top: 0px; height: 100%; width: 100%; z-index: -1; background: rgb(0, 0, 0) none repeat scroll 0% 0%; opacity: 0.6; }
+.dialog_box { width: 1000px; margin: 0px auto; overflow-x: hidden; }
+.dialog_header { position: relative; padding: 45px 50px 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.dialog_header::after { visibility: hidden; display: block; font-size: 0px; content: " "; clear: both; height: 0px; }
+.dialog_header .dialog_title { display: block; float: none; height: 40px; line-height: 35px; border-bottom: 1px solid rgb(204, 204, 204); font-size: 30px; color: rgb(128, 128, 128); font-weight: normal; }
+.dialog_close { position: absolute; right: 20px; top: 20px; background: transparent url(" ../img/product/newVersion/ico_detail.png") no-repeat scroll -107px -398px; width: 30px; height: 30px; cursor: pointer; text-indent: -999em; }
+.dialog_close:hover { background-position: -152px -396px; }
+.dialog_body { background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: relative; overflow: auto; width: 100%; }
+.dialog_con { padding: 10px 50px; overflow-x: hidden; }
+.dialog_footer { text-align: center; display: block; padding: 15px 20px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border-top: 1px solid rgb(204, 204, 204); box-shadow: 0px 15px 10px -20px rgb(0, 0, 0) inset; }
+.dialog_footer::after { visibility: hidden; display: block; font-size: 0px; content: " "; clear: both; height: 0px; }
+.tips_box { opacity: 0; position: fixed; z-index: 1001; width: 100%; text-align: center; bottom: -50px; left: 0px; height: 30px; line-height: 28px; background: rgb(239, 239, 239) none repeat scroll 0% 0%; font-family: "微软雅黑"; font-size: 14px; }
+.tips_box strong { font-size: 14px; line-height: 0; display: inline; font-weight: normal; background: rgb(239, 239, 239) none repeat scroll 0% 0%; padding: 0px 8px; }
+.tips_box .tips_close { opacity: 0; position: absolute; right: -50px; bottom: 0px; color: rgb(255, 255, 255); font-size: 42px; background: rgb(204, 57, 57) none repeat scroll 0% 0%; width: 50px; height: 45px; text-align: center; line-height: 38px; box-shadow: -2px -2px 5px rgb(85, 85, 85); }
+.tips_box .tips_close:hover { background: rgb(187, 57, 57) none repeat scroll 0% 0%; color: rgb(255, 255, 255); }
+.tips_box.error { background: rgb(204, 17, 17) none repeat scroll 0% 0%; color: rgb(255, 255, 255); }
+.tips_box.error p { overflow: hidden; height: 30px; }
+.tips_box.error strong { background: rgb(204, 17, 17) none repeat scroll 0% 0%; color: rgb(255, 255, 255); overflow: hidden; }
+.abtn { display: inline-block; background: rgb(239, 239, 239) none repeat scroll 0% 0%; padding: 5px 25px; margin-right: 10px; font-size: 14px; font-family: "微软雅黑"; color: rgb(51, 51, 51); }
+.abtn:hover { background: rgb(207, 207, 207) none repeat scroll 0% 0%; color: rgb(51, 51, 51); }
+.abtn.confirm { background: rgb(204, 17, 17) none repeat scroll 0% 0%; color: rgb(255, 255, 255); }
+.abtn.confirm:hover { background: rgb(255, 20, 20) none repeat scroll 0% 0%; color: rgb(255, 255, 255); }
+.pass_box .dialog_body {  }
+.site_nav { float: left; width: 733px; height: 45px; margin-top: 27px; display: inline-block; }
+a:focus { outline: medium none; }
+.subNav_goods { height: 100%; overflow: hidden; }
+.subNav_goods .goods_list { background: transparent url('fenjie.png') no-repeat scroll center center; overflow: hidden; }
+.subNav_goods .goods_list li { float: left; overflow: hidden; height: 100%; }
+.subNav_goods .goods_list .gitem { display: block; }
+.subNav_goods .goods_list .gimg { display: inline-block; }
+.subNav_goods .goods_list p { line-height: 20px; height: 20px; overflow: hidden; font-size: 16px; }
+.subNav_goods .goods_list .gname { font-size: 16px; }
+.subNav_goods .goods_list .gdesc { color: rgb(109, 109, 109); }
+.subNav_goods .goods_list .gprice { color: rgb(204, 17, 17); }
+.subNav_goods .goods_list .gprice var { font-size: 24px; }
+.subNav_goods .goods_list .abtn { margin: 8px 0px 5px; font-size: 16px; }
+.subNav_goods.two .goods_list li { width: 50%; }
+.subNav_goods.two .goods_list .gitem { padding: 5px 30px; }
+.subNav_goods.two .goods_list .gimg { float: left; width: 240px; height: 240px; margin-right: 30px; display: inline; }
+.subNav_goods.two .goods_list .gname { margin-top: 35px; }
+.subNav_goods.two .goods_list .gprice { margin-top: 8px; }
+.subNav_goods.two .goods_list .gbuy { padding: 8px 20px; background: rgb(236, 17, 17) none repeat scroll 0% 0%; }
+.subNav_goods.two .goods_list .gbuy:hover { background: rgb(255, 18, 18) none repeat scroll 0% 0%; }
+.subNav_goods.two .goods_list li a { text-decoration: none; }
+.site_footer { width: 100%; min-width: 1226px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.site_footer .site_about { line-height: 20px; padding: 50px 0px; font-family: "宋体"; background: rgb(243, 243, 243) url('footer-bg.png') no-repeat scroll center center; }
+.site_footer .site_about .about_left { float: left; margin-left: 92px; display: inline; }
+.site_footer .site_about .about_right { float: right; width: 500px; margin-right: 70px; display: inline; }
+.modify { width: 1000px; margin: auto; padding-top: 20px; height: 186px; }
+.modify li { padding-left: 27px; width: 172px; height: 165px; border-right: 1px solid rgb(230, 230, 230); float: left; }
+.modify li dl dt { font-size: 18px; color: rgb(51, 51, 51); margin-bottom: 3px; }
+.modify li dl dd { font-size: 14px; color: rgb(102, 102, 102); }
+.modify li dl dd a { margin-right: 4px; color: rgb(102, 102, 102); }
+.modify li dl { padding-bottom: 20px; }
+.modify li dl dd a:hover { color: rgb(204, 17, 17); }
+.modify li dl dd p { line-height: 20px; margin-top: 5px; }
+.modify_ico { width: 75px; height: 26px; border: 1px solid rgb(207, 207, 207); margin-bottom: 4px; }
+.modify_copy { color: rgb(51, 51, 51); font-size: 12px; line-height: 0; }
+.modify li dl dd .modify_pic img { margin-bottom: 4px; }
+.modify li dl dd p a { color: rgb(0, 0, 0); line-height: 0px; height: 0px; }
+.modify .modify_lh dl dd a { color: rgb(102, 102, 102); line-height: 28px; }
+.wechat_box { padding: 120px 30px; }
+.wechat_box img { float: left; }
+.wechat_box ul { float: right; padding-top: 25px; }
+.wechat_box ul li { line-height: 30px; font-size: 14px; color: rgb(112, 112, 112); }
+.copyright_box { line-height: 22px; font-size: 14px; }
+.copyright_box p { text-indent: 2em; }
+.copyright_box small { color: rgb(204, 17, 17); margin: 0px 2px; }
+.toolbar { position: fixed; bottom: 140px; right: 0px; width: 42px; height: 132px; border-width: medium 1px 1px; border-style: none solid solid; border-color: -moz-use-text-color rgb(207, 207, 207) rgb(207, 207, 207); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; display: none; }
+.toolbar ul { display: block; width: 100%; }
+.toolbar li { position: relative; width: 100%; height: 43px; border-top: 1px solid rgb(207, 207, 207); background: rgb(237, 237, 237) url('toolbar_pic.png') no-repeat scroll 0% 0%; text-align: center; }
+.toolbar li.siteShopCart { background-position: -3px -125px; }
+.toolbar li.siteCustom { background-position: -1px -40px; }
+.toolbar li.siteApp { background-position: -1px -83px; }
+.toolbar li.toTop { display: none; background-position: -2px -164px; }
+.toolbar li a { display: none; position: relative; height: 33px; width: 32px; padding: 5px; background-color: rgb(204, 17, 17); color: rgb(255, 255, 255); }
+.toolbar li:hover a { display: block; }
+.toolbar li.siteShopCart a { padding: 7px 0px; width: 42px; height: 29px; }
+.toolbar li.siteCustom a { background-image: url('toolbar_pic.png'); background-repeat: no-repeat; background-position: -1px -195px; }
+.siteQRCode { display: none; position: absolute; right: 42px; top: -45px; width: 98px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; padding-left: 15px; border: 1px solid rgb(207, 207, 207); text-align: center; }
+.siteQRCodeTitle { display: block; width: 84px; height: 30px; padding-top: 8px; margin-bottom: 3px; line-height: 15px; font-size: 12px; text-align: center; }
+.siteQRCode img { margin-left: -11px; }
+.toolbar li.siteCustom:hover .siteQRCode { display: block; }
+.siteQQ { overflow: hidden; padding: 8px 0px; border-top: 1px dashed rgb(204, 204, 204); width: 78px; margin-left: 5px; }
+.toolbar li.siteCustom a.QQ { position: relative; display: block; margin-bottom: 6px; background: transparent none repeat scroll 0% 0%; width: 78px; height: 24px; padding: 0px; }
+.toolbar li.siteCustom a.QQ img { margin-left: 0px; }
+.toolbar li.siteCustom a.QQ span { position: absolute; height: 24px; left: 23px; line-height: 24px; color: rgb(51, 51, 51); }
+.i-country, .tata, .sQun { float: left; height: 16px; width: 25px; margin: 6px 5px 0px 0px; background: transparent url('ico-country.png') no-repeat scroll 0px 0px; }
+.Malaysia { background-position: 0px -32px; }
+.America { background-position: 0px -128px; }
+.Polska { background-position: 0px -320px; }
+.tata, .sQun, .f_attention, .authority { background: transparent url('footer_ico.png') no-repeat scroll 0px 0px; }
+.tata { background-position: -4px -173px; }
+.block { display: block; }
+.f_attention { float: left; width: 68px; height: 17px; overflow: hidden; }
+.modify li dl dd a.f_attention { margin: 5px 25px 8px 0px; }
+.f_wb { background-position: 0px -30px; }
+.f_facebook { background-position: 0px -57px; }
+.f_twitter { background-position: 0px -86px; }
+.f_youtube { background-position: 0px -113px; }
+.category_goods .goods_list li.main_item::before { content: ""; display: inline-block; height: 100%; vertical-align: middle; }
+.fitting { width: 1226px; margin: auto; }
+.fitting_top { height: 60px; line-height: 60px; }
+.fitting .title { float: left; display: inline-block; width: 720px; }
+.fitting .title h2 { font-size: 22px; font-weight: normal; }
+.fitting_ad { width: 1226px; overflow: hidden; }
+.fitting_ad li { float: left; width: 200px; height: 263px; margin-left: 14px; padding: 37px 17px 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; text-align: center; line-height: 26px; font-size: 14px; position: relative; }
+.fitting_ad a { color: rgb(51, 51, 51); width: 200px; overflow: hidden; white-space: nowrap; }
+.fitting_ad a:hover { color: rgb(204, 17, 17); text-decoration: underline; }
+.fit_price { color: rgb(254, 0, 0); width: 200px; overflow: hidden; white-space: nowrap; }
+.fit_review { width: 200px; color: rgb(153, 153, 153); font-size: 12px; line-height: 35px; overflow: hidden; white-space: nowrap; }
+.slideBox { width: 100%; overflow: hidden; position: relative; }
+.slideBox .hd { overflow: hidden; position: absolute; left: 0px; width: 100%; bottom: 45px; z-index: 1; }
+.slideBox .hd ul { overflow: hidden; margin: auto; text-align: center; }
+.slideBox .hd ul li { display: inline-block; margin-right: 2px; width: 15px; height: 15px; line-height: 14px; text-align: center; cursor: pointer; border-radius: 100%; border: 2px solid rgb(225, 132, 132); }
+.slideBox .hd ul li.on { background: rgb(225, 132, 132) none repeat scroll 0% 0%; }
+.slideBox .bd { position: relative; height: 100%; z-index: 0; overflow: hidden; }
+.slideBox .bd li { vertical-align: middle; height: 100%; }
+.slideBox .bd img { width: 100%; height: 100%; display: block; }
+.record { width: 220px; display: block; margin-top: 15px; }
+.modify_box { width: 800px; }
+/* ::::: http://www.skg.com/styles/storefront/css/login.css ::::: */
+
