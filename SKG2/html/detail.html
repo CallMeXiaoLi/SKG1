@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset="utf-8">
+			<title>SKG详情页</title>
+			<link rel="stylesheet" type="text/css" href="../css/detail.css"/>
+			<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+			<script src="../js/jquery-1.11.3.js" type="text/javascript"></script>
+			<script src="../js/cookie.js" type="text/javascript"></script>
+			<script src="../js/detail.js" type="text/javascript"></script>
+			<script src="../js/common.js" type="text/javascript"></script>
+
+	</head>
+	<body>
+		<!-- 头部-->
+		<div id = "site_top" class = "site">
+			<div class = "tp_1">
+				<a class = "topNav" href="javascript:;"><span class = "bg1"></span>微博</a>
+				<a class = "topNav" href="javascript:;"><span class = "bg2"></span>微信</a>
+				<a class = "topNav" href="javascript:;"><span class = "bg3"></span>SKG社区</a>
+				<a class = "topNav" href="javascript:;"><span class = "bg4"></span>SKG+硅谷孵化园</a>
+			</div>
+			<div class = "fr">				
+				<div class = "tp_2">
+					<span class = "span s1"><a class = "topNav" class = "topA topNav" href="car.html"><span class = "bg4"></span>购物车( <em class = "carNum">0</em> )</a></span>
+				<span class = "span s2"><a class = "topNav" href="login.html">注册有惊喜</a></span>
+					<span class = "span s2"><a class = "topNav" href="enter.html">登录</a></span>		
+				</div>
+				<div class = "tp_3">
+					<p class = "s3"><a class = "topNav" href="javascript:;">我的账户<span class = "bg6"></span></a></p>
+					<p class = "account_list">
+						<a class = "a_fist" href = "javascript"><span></span>我的账户</a>
+						<a class = "a_ft" href = "javascript:;">我的订单</a>
+						<a class = "a_ft" href = "javascript:;">使用评论</a>
+						<a class = "a_ft" href = "javascript:;">现金积分</a>
+						<a class = "a_ft" href = "javascript:;">优惠券</a>
+						<a class = "a_ft" href = "javascript:;">我的收藏</a>
+					</p>
+				</div>
+				<div class = "tp_4">
+					<span class = "span_s"><a class = "topNav a_t" href="javascript:;">手机版<span class = "bg6"></span></a></span>
+					<p class = "app_code">
+						<img src="../img/code.jpg" alt ="扫描二维码下载APP"/>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- 导航栏-->
+		<div id = "nav" class = "site">
+			<div class = "logo">
+				<a href = "javascript:;"><img src= "../img/site-logo.png" alt="" /></a>
+			</div>
+			<ul class = "nav_ul">
+				<li id = "id_li1" class = "nav_li">
+					<p class = "p1_id"><a href="listing.html">所有产品</a></p>
+					<div id = "me_id" class = "select same_th">
+						<ul  class = "menu">
+							<li id = "menu_id1" class = "child"></li>
+							<li id = "menu_id2" class = "child"></li>
+							<li id = "menu_id3" class = "child"></li>
+							<li id = "menu_id4" class = "child"></li>
+							<li id = "menu_id5" class = "child"></li>
+							<li id = "menu_id6" class = "child"></li>  
+						</ul>
+					</div> 
+
+				</li>
+				<li class = "nav_li"><p class = "p1_id"><a href="javascript:;">美容护肤</a></p></li>
+				<li id = "id_li3" class = "nav_li">
+					<p class = "p1_id"><a href="javascript:;">厨房电器</a></p>
+					<div id = "kit_id" class = "game_two same_th">
+						<ul id = "kit" class = "menu kit_nav"></ul> 
+					</div>
+				</li>
+				<li id = "id_li4" class = "nav_li">
+					<p class = "p1_id"><a href="javascript:;">原汁机</a></p>
+					<div id = "jMachine" class = "game_two same_th">
+						<ul class = "menu kit_nav"></ul>
+					</div> 
+				</li>
+				<li class = "nav_li"><p class = "p1_id"><a href="javascript:;">SkG服务</a></p></li>
+				<li class = "nav_li"><p class = "p1_id"><a href="javascript:;">SKG社区</a></p></li>
+				<li class = "nav_li"><p class = "p1_id"><a href="javascript:;">了解SKG</a></p></li>
+							</ul>
+							<div class= "nav_right">
+				<p class = "nav_search">
+					<a href="#">烤箱</a>
+					<a href="#">原汁机</a>
+				</p>
+				<input id="search_keywords_id" class="search_input " type="text" value="">
+				<a class="search_btn"  skgactionprop="search" skgaction="btn"  href="javascript:;;"></a>
+			</div>	  
+		</div>
+		<!--主体内容-->
+		<div class = "site main">
+			<div class = "breadcrumb">
+				<p class = "wrap"><a href="#">首页</a><a href="#">/</a><a href="#">厨房电器</a><a href="#">/</a><a href="#">电热水壶</a></p>
+			</div>
+			<div class = "product">
+				<div class= "pro_top">
+					<div id="prodImg" class = "prodImg"> <!--zoomIn-->
+						<div class = "hd prodImgboxScroll" style = " overflow: hidden;">
+							<ul>
+								<li class = "on"><a href="#"><img src="../image/product_bg1.jpg" alt="" /></a></li>
+								<li><a href="#"><img src="../image/product_bg2.jpg" alt="" /></a></li>
+								<li><a href="#"><img src="../image/product_bg3.jpg" alt="" /></a></li>
+								<li><a href="#"><img src="../image/product_bg4.jpg" alt="" /></a></li>
+								<li><a href="#"><img src="../image/product_bg5.jpg" alt="" /></a></li>
+								<li><a href="#"><img src="../image/product_bg6.jpg" alt="" /></a></li>
+							</ul>
+						</div>
+						<div class = "bd" style = "height: 510px; left: 178.5px; top: 221px; width: 510px;">
+							<ul>
+								<li class = "s_box" style = " display: list-item">
+									<p class = "mark_box"></p>
+									<a href="#"><img src="../image/product_bg1.jpg" alt="" /></a>
+									<p class = "position_box"></p>
+								</li>
+								<li class = "s_box">
+									<p class = "mark_box"></p>
+									<a href="#"><img src="../image/product_bg2.jpg" alt="" /></a>
+									<p class = "position_box"></p>
+								</li>
+								<li class = "s_box">
+									<p class = "mark_box"></p>
+									<a href="#"><img src="../image/product_bg3.jpg" alt="" /></a>
+									<p class = "position_box"></p>
+								</li>
+								<li class = "s_box">
+									<p class = "mark_box"></p>
+									<a href="#"><img src="../image/product_bg4.jpg" alt="" /></a>
+									<p class = "position_box"></p>
+								</li>
+								<li class = "s_box">
+									<p class = "mark_box"></p>
+									<a href="#"><img src="../image/product_bg5.jpg" alt="" /></a>
+									<p class = "position_box"></p>
+								</li>
+								<li class = "s_box">
+									<p class = "mark_box"></p>
+									<a href="#"><img src="../image/product_bg6.jpg" alt="" /></a>
+									<p class = "position_box"></p>
+								</li>
+							</ul>
+							<div class = "b_box">
+								<div class="b_box_all">
+									<!-- <img src="../image/product_bg1.jpg" alt=""> -->
+								</div>
+							</div>
+						</div>
+						<a class="prev" href="javascript:;"></a>
+						<a class="next" href="javascript:;"></a>
+						<a class="close" href="javascript:;"></a>
+					</div>
+					
+					<div class = "prodInfo">
+						<div class = "prodTitle" >
+							<h1 id="skuName" class="prodName">SKG8068（蓝）电热水壶</h1>
+							<a class="prodCollect" href="#">收藏该商品</a>
+						</div>
+						<ul class="productSale">
+							<li class="price">
+								<h2>
+									<span class="salePrice"> 179 </span>
+									元
+									<span class="marketPrice">
+										<em id="listPrice">299</em>
+										元
+									</span>
+								</h2>
+							</li>
+							<li class="prodInfoItem">
+								<h2>
+									<span class="infoKey">品 牌：</span>
+									<span class="infoValue">SKG</span>
+									<span class="infoKey">商品编号：</span>
+									<span id="saleKey" class="infoValue">1030100135</span>
+									<span class="infoKey">满¥88元免运费</span>
+								</h2>
+							</li>
+							<li class="prodInfoItem">
+								<h2>
+									<span class="infoKey">出口国家:</span>
+									
+								</h2>
+							</li>
+							<li class="mobilePrice clearfix">
+								<span class="mobilePrice_left">
+									<b>手机专享价</b>
+									￥
+									<i> 178 </i>
+								</span>
+								<dl class="mobilePrice_right">
+									<dt>
+										去手机购买
+										<i></i>
+									</dt>
+								</dl>
+							</li>
+						</ul>
+						<div class = "addNum">
+							<p class = "p_id">添加数量</p>
+							<p class = "amount">
+								<a class = "minus" href="javascript:;"> </a>
+								<input class = "none" type="text" name="username" value = "1">
+								<a class = "plus" href="javascript:;"> </a>	
+							</p>
+						</div>
+						<div class="prodBuy">
+							<a id="addtocart" class="redBtn addtoCart disabeld" skgaction="btn" href="javascript:;">
+								<i></i>
+								加入购物车
+							</a>
+							<a class="buyNow" skgaction="btn" href="javascript:;">
+								<i></i>
+								立即购买
+							</a>
+						</div>
+						<ul class="prodBottom">
+							<li>
+								<a class = "border_None" href="javascript:;">
+									<i class="prodComment"> </i>
+									评论
+									<span>30</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<i class="prodSales"></i>
+									销量
+									<span>42</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<i class="prodAsk"></i>
+									提问
+									<span>0</span>
+								</a>
+							</li>
+						</ul>
+						<a class="checkMore" href="#">
+							<i> </i>
+							查看更多电热水壶
+						</a>
+						<a class="qqq" href="#" >
+							<img  alt="售前咨询" src="../image/qqlist.jpg">
+							<span>在线咨询</span>
+						</a>
+					</div>
+				</div>			
+			</div>			
+		</div>
+		<!--我们努力做到更优秀，其它的，等你来检验！-->		
+		<div class = "concept site">		
+			<div class = "wrap">
+				<h2>我们努力做到更优秀，其它的，等你来检验！</h2>
+				<ul>
+					<li><a href="#"><i>.</i>严格6级质检</a></li>
+					<li><a href="#"><i>.</i>没有中间商</a></li>
+					<li><a href="#"><i>.</i>27500个服务网点</a></li>
+					<li><a href="#"><i>.</i>我们的客服满意率98%</a></li>
+					<li><a href="#"><i>.</i>了解SKG生活的6个数字</a></li>
+					<li><a href="#"><i>.</i>七天无理由退换货</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--描述、评价部分-->
+		<div class = "prodTab site">
+			<div class = "wrap">
+				<ul class = "prodTabNav">
+					<li class = "on"><a href="#">详情描述</a></li>
+					<li><a href="#">规格参数</a></li>
+					<li><a href="#">评论晒单（30）</a></li>
+					<li><a href="#">商品提问（0）</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class = "prodTab tabFixed site" style = "display: none">
+			<div class = "wrap_scroll">
+				<a class="tabGoods">
+					<img src="../image/product_bg2.jpg">
+					<span class="tabProdName">SKG8068（蓝）电热水壶</span>
+					<span class="tabPrice">
+					<var>179元</var>
+					<em>299元</em>
+					</span>
+				</a>
+				<ul class="prodTabNav prodOnNav">
+					<li class="first on">
+						<a href="javascript:;">详情描述</a>
+					</li>
+					<li>
+						<a href="javascript:;">规格参数</a>
+					</li>
+					<li>
+						<a  href="javascript:;">评价晒单 (30)</a>
+					</li>
+					<li>
+						<a  href="javascript:;">商品提问 (0)</a>
+					</li>
+				</ul>
+				<a id="addtoCart2" class="redBtn addtoCart" href="car.html">
+				<i> </i>
+				加入购物车
+				</a>
+			</div>
+		</div>
+		<div class = "prodIntro site">
+			<div class = "wrap">
+				<ul>
+					<!--<li><img src="../image/bg01.jpg" alt="" /></li>
+					<li><img src="../image/bg02.jpg" alt="" /></li>
+					<li><img src="../image/bg03.jpg" alt="" /></li>
+					<li><img src="../image/bg04.jpg" alt="" /></li>
+					<li><img src="../image/bg05.jpg" alt="" /></li>
+					<li><img src="../image/bg06.jpg" alt="" /></li>
+					<li><img src="../image/bg07.jpg" alt="" /></li>
+					<li><img src="../image/bg08.jpg" alt="" /></li>
+					<li><img src="../image/bg09.jpg" alt="" /></li>
+					<li><img src="../image/bg10.jpg" alt="" /></li>-->
+				</ul>
+			</div>
+		</div>
+		<!--下部内容-->
+ 		<div class = "site site_footer">
+ 			<div class = "box">
+ 				<div class = "site_left">
+	 				<h2><a href="#"><img src="../img/logo_bottom.png" alt="" /></a></h2>
+	 				<p>中国区版权及品牌持有人：<br />SKG（中国）有限公司</p>
+ 				</div>
+ 				<div class = " site_right">
+ 					<h4>致SKG会员的一封信</h4>
+	 				<p>感谢你光顾SKG商城。</p>
+	 				<p>我们一直在思考，到底什么样的产品最能符合现代女性多元化+个性化的需求，以及什么样的设计能满足SKG用户对时尚健康的追求。SKG从产品研发、制造、销售到服务，每一个环节，我们都会用心倾听用户的声音，我们所有的设计灵感，都来自于用户的真实体验。我们希望把全球最好的设计和产品带给我们的会员，让她每一次购物都有超出预期的惊喜，也正因如此，SKG一直走在行业的前列，并获得了千万用户的喜爱。</p>
+ 				</div>
+ 			</div>
+ 		</div>
+ 		
+ 		<!--最底下内容-->
+		<div class = "site modify">
+			<div class = "bottom">
+				<ul>
+					<li class = "li">
+						<dl>
+							<dt>网站</dt>
+							<dd>
+								<a href="#">
+									<i class = "America i-country"></i>
+									SKG U.S.A 
+								</a>
+							</dd>
+							<dd>
+								<a href="#">
+									<i class = "Polska i-country"></i>
+									SKG Polska  
+								</a>
+							</dd>
+							<dd>
+								<a href="#">
+									<i class = "Malaysia i-country"></i>
+									SKG Malaysia 
+								</a>
+							</dd>
+							<dd>
+								<a href="#">
+									<i class = "tata"></i>
+									SKG社区 
+								</a>
+							</dd>
+						</dl>
+					</li>
+					<li class = "li">
+						<dl>
+							<dt>关于我们</dt>
+							<dd>
+								<a href="#">联系我们</a>
+							</dd>
+							<dd>
+								<a href="#">版权声明</a>
+							</dd>
+							<dd>
+								<a href="#">我要反馈</a>
+							</dd>
+							<dd>
+						<a href="#">招募合伙人</a>
+							</dd>
+						</dl>
+					</li>	
+					<li class = "li">
+						<dl>
+							<dt>关注我们</dt>
+							<dd>
+								<a class = "wechat f_attention" href="#"></a>
+							</dd>
+							<dd>
+								<a class = "f_attention f_wb" href="#"></a>
+							</dd>
+							<dd>
+								<a class = "f_attention f_facebook" href="#"></a>
+							</dd>
+							<dd>
+								<a class = "f_attention f_twitte" href="#"></a>
+							</dd>
+							<dd>
+								<a class = "f_attention f_youtube" href="#"></a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dd>
+								<a class = "modify_pic bg1" href="#"></a>
+								<a class = "modify_pic bg2" href="#"></a>
+								<a class = "modify_pic bg3" href="#"></a>
+								<a class = "modify_pic bg4" href="#"></a>
+								<a class = "modify_pic bg5" href="#"></a>
+								<a class = "modify_pic bg6" href="#"></a>
+							</dd>
+							<p class = "modify_copy"><a href="#">备案号：粤ICP备13079021号-1</a></p>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<p class = "foot_links">
+				<span>友情链接：</span>
+				<a href="#">品牌百科</a>
+				<a href="#">耐克</a>
+				<a href="#">精工手表官网</a>
+				<a href="#">二手家电</a>
+				<a href="#">中国电网</a>
+				<a href="#">内增高鞋</a>
+				<a href="#">长春家具</a>
+				<a href="#">skg百科</a>
+		
+			</p>
+		</div>
+
+		<!--返回顶部-->
+		<ul class = "suckTopMemu">
+			<li class = "siteShopCart"><a class = "_blank" href="car.html">购物车<span id = "number">0</span></a></li>
+			<li class= "siteCustom">
+				<a class = "_blank kf" href="#"></a>
+				<div class = "siteQRCode">
+					<p class = "siteQRCodeTitle" >微信扫一扫<br />公众号咨询 </p>
+					<img class = "skg" src="../img/skg.jpg" alt="" />
+					<div class = "siteQQ">
+						<a class = "qq" href="#">
+							<img src="../img/qqlist_001.jpg" alt="" />
+							<span>售前咨询</span>
+						</a>
+						<a class = "qq" href="#">
+							<img src="../img/qqlist_001.jpg" alt="" />
+							<span>售后咨询</span>
+						</a>
+						<a class = "qq" href="#">
+							<img src="../img/qqlist_001.jpg" alt="" />
+							<span>配件咨询</span>
+						</a>
+						<a class = "qq" href="#">
+							<img src="../img/qqlist_001.jpg" alt="" />
+							<span>团购咨询</span>
+						</a>
+					</div>
+				</div>
+			</li>
+			<li class = "siteApp"><a class = "_blank" href="#">APP下载</a></li>
+			<li class="toTop"><a class = "_blank" href="#">回到顶部</a></li>
+		</ul>
+	</body>
+</html>
