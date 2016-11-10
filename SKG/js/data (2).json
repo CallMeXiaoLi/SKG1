@@ -1,0 +1,165 @@
+[
+	{"banner":
+		["banner1.png","banner2.png","banner1.png"]
+	},
+	{"img":
+		[
+			"ad1.jpg",
+			"ad2.jpg",
+			"ad3.jpg",
+			"ad4.jpg"	
+		]
+	},				
+	{"shoopping":	
+		[{
+		    "title": "随身宝揉捏按摩披肩 SKG4079",
+		    "imgUrl": "img1.jpg",
+		    "des": "有了它，还要去美容吗？",
+		    "price": "¥189"	,
+		    "evaluate":"2人评价"  
+		  },
+		 	{
+		    "title": "无线仿真人揉捏按摩披肩 SKG",
+		    "imgUrl": "img2.jpg",
+		    "des": "有了它，还要去美容吗？",
+		    "price": "¥189"	,
+		    "evaluate":"10人评价"  	  
+		  },
+		  {
+		    "title": "白领肩颈按摩披肩 SKG 4042",
+		    "imgUrl": "img3.jpg",
+		    "des": "有了它，还要去美容吗？",
+		    "price": "¥189"	,
+		    "evaluate":"56人评价"  	  
+		  },
+		  {
+		    "title": "家用多功能按摩披肩 SKG 4089",
+		    "imgUrl": "img4.jpg",
+		    "des": "有了它，还要去美容吗？",
+		    "price": "¥189"	,
+		    "evaluate":"540人评价"  	  
+		  }]
+		
+	},
+	{"shoopping":
+		[
+			
+		  {
+		    "title": "祛皱美容仪 SKG 3155",
+		    "imgUrl": "img5.jpg",
+		    "des": "有了它，还要去美容吗？",
+		    "price": "¥189",
+		  	"evaluate":"11人评价"  
+		  },
+		  {
+		    "title": "超声波按摩美容仪（三色彩光-红",
+		    "imgUrl": "img6.jpg",
+		    "des": "有了它，还要去美容吗？",
+		    "price": "¥189",
+		    "evaluate":"99人评价"  
+		  
+		  },
+		  {
+		    "title": "超声波离子导入仪（2合1）SK",
+		    "imgUrl": "img7.jpg",
+		    "des": "有了它，还要去美容吗？",
+		    "price": "¥189",
+		  	"evaluate":"2人评价"  
+		  },
+		  {
+		    "title": "多功能彩光离子美容仪（红）",
+		    "imgUrl": "img8.jpg",
+		    "des": "有了它，还要去美容吗？",
+		    "price": "¥189"	,
+		    "evaluate":"21人评价"  	  
+		  }
+		]
+		
+	},
+	{"goods2":
+		[{
+		    "title": "纳米负离子蒸脸器（玫瑰纹）",
+		    "imgUrl": "img1.png",
+		    "des": "有了它，还要去美容吗？",
+		    "price": "¥189"	  
+	  	},
+	  	{
+		    "title": "纳米负离子蒸脸器（玫瑰纹）",
+		    "imgUrl": "img2.png",
+		    "des": "有了它，还要去美容吗？",
+		    "price": "¥189"	  
+	  	},
+	  	{
+		    "title": "纳米负离子蒸脸器（玫瑰纹）",
+		    "imgUrl": "img3.png",
+		    "des": "有了它，还要去美容吗？",
+		    "price": "¥189"	  
+	  	},
+	  	{
+		    "title": "纳米负离子蒸脸器（玫瑰纹）",
+		    "imgUrl": "img4.png",
+		    "des": "有了它，还要去美容吗？",
+		    "price": "¥189"	  
+	 	},
+	  	{
+		    "title": "纳米负离子蒸脸器（玫瑰纹）",
+		    "imgUrl": "img5.png",
+		    "des": "有了它，还要去美容吗？",
+		    "price": "¥189"	  
+	  	}]
+	},
+	{"goods3":
+		[{	
+		    "title": "纳米负离子蒸脸器（玫瑰纹）",
+		    "imgUrl": "img6.png",
+		    "des": "有了它，还要去美容吗？",
+		    "price": "¥189"	  
+	  	},
+	 	{
+		    "title": "纳米负离子蒸脸器（玫瑰纹）",
+		    "imgUrl": "img7.png",
+		    "des": "有了它，还要去美容吗？",
+		    "price": "¥189"		  
+	  	},
+	  	{
+		    "title": "纳米负离子蒸脸器（玫瑰纹）",
+		    "imgUrl": "img8.png",
+		    "des": "有了它，还要去美容吗？",
+		    "price": "¥189"		  
+	  	},
+	  	{
+		    "title": "纳米负离子蒸脸器（玫瑰纹）",
+		    "imgUrl": "img9.png",
+		    "des": "有了它，还要去美容吗？",
+		    "price": "¥189"	  
+	 	}]			  	
+	},
+  	{"bg":
+  		[ "img1.gif", "img2.gif"]
+  	},
+  	{"tv":
+  		[
+	  		{
+	  			"imgUrl": "vd1.jpg",
+			    "des": "SKG 3607智能冰吧",
+			    "explain": ""
+	  		},
+	  		{
+	  			"imgUrl": "vd2.jpg",
+			    "des": "SKG 3506冰吧",
+			    "explain": "SKG 3506冰吧"
+	  		},
+	  		{
+	  			"imgUrl": "vd3.jpg",
+			    "des": "SKG 3512冰箱",
+			    "explain": "SKG 3512冰箱"
+	  		},
+	  		{
+	  			"imgUrl": "vd4.jpg",
+			    "des": "3595冰箱视频",
+			    "explain": ""
+	  		}
+  		]
+  	}
+  	 
+]

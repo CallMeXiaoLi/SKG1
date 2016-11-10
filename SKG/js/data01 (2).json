@@ -1,0 +1,103 @@
+[
+	{"obj":"厨房电器",  	
+		"child":[
+			{"title": "电烤箱"},
+			{"title": "煎烤机"},
+			{"title": "面包机"},
+			{"title": "电陶炉"},
+			{"title": "养生壶"},
+			{"title": "净水机"},
+			{"title": "电热水壶"},
+			{"title": "电热水瓶"},
+			{"title": "烘焙配套"}
+		]
+	},
+	
+	{"obj":"原汁机",  	
+		"child":[
+			{	
+				"title": "原汁机"},
+				{"title": "料理机"},
+				{"title": "榨汁机"
+			}
+		]
+	},
+	{"obj":"运动健康",  	
+		"child":[
+			{	
+				"title": "跑步机"},
+				{"title": "踏步机"},
+				{"title": "塑身机"},
+				{"title": "健身机"
+			}
+		]
+	},
+	{"obj":"个人护理",  	
+		"child":[
+			{   
+				"title": "美容仪"},
+				{"title": "洁面仪"},
+				{"title": "蒸脸仪"},
+				{"title": "按摩披肩"},
+				{"title": "塑身腰带"
+			}
+		]
+	},
+	{"obj":"互联网家电",  	
+		"child":[
+			{	
+				"title": "冰箱冰吧"},
+				{"title": "红酒柜"},
+				{"title": "洗衣机"},
+				{"title": "热水器"},
+				{"title": "吸烟器"},
+				{"title": "吸油烟机"},
+				{"title": "燃气炉"},
+				{"title": "消毒柜"},
+				{"title": "厨电套装"
+			}
+		]
+	},			
+	
+	{"obj":"生活电器",  	
+		"child":[
+			{
+				"title": "挂烫机"},
+				{"title": "干洗机"},
+				{"title": "除螨仪"},
+				{"title": "空气净化器"},
+				{"title":"加湿器"
+			}
+		]
+	},
+	{"goods":	
+		[{
+		    "title": "云智能家电电子式烤箱SKG1733",
+		    "imgUrl": "ele1.jpg",
+		    "price": "499元",
+		    "details": "了解更多&gt"
+
+
+		},
+		{
+		    "title": "多功能智能预约面包机（不锈钢一根）",
+		    "imgUrl": "ele2.jpg",
+		    "price": "599元" ,
+		     "details": "了解更多&gt" 	  
+		}]		
+	},
+	{"goods":	
+		[{
+		    "title": "商家大口径家用多功能原汁机SKG2081",
+		    "imgUrl": "juicer1.jpg",
+		    "price": "899元",
+		     "details": "了解更多&gt"		  
+		},
+		{
+		    "title": "家用全自动高速破壁机SKG2089",
+		    "imgUrl": "juicer2.jpg",
+		    "price": "1299元" ,
+		     "details": "了解更多&gt" 	  
+		}]	
+	}
+]
